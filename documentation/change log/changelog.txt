@@ -1,0 +1,7 @@
+2018-09-12
+    * Draft for Initial Release 
+	
+2018-12-27
+	* SensorDetails updated with Sensor ReadingDateTime field
+
+

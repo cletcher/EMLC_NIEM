@@ -1,0 +1,18 @@
+NIEM Conformance Assertion
+
+This NIEM IEPD conforms to the following NIEM specifications:
+# list of URIs that the IEPD conforms to
+http://reference.niem.gov/niem/specification/conformance/4.0/
+http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/
+http://reference.niem.gov/niem/specification/model-package-description/4.0/
+
+mpdURI: TBD
+
+Author: Department of Homeland Security
+
+Details:
+# This IEPD has been evaluated using the NIEM ConTesA business rule engine that utilizes schematron. 
+  Results are available in \documentation\conformance report
+
+
+
