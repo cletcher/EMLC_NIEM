@@ -58,7 +58,7 @@
   <uri name="http://release.niem.gov/niem/domains/surfaceTransportation/4.0/" uri="domains/surfaceTransportation/4.0/st.xsd"/>
   <uri name="http://release.niem.gov/niem/niem-core/4.0/" uri="niem-core/4.0/niem-core.xsd"/>
   <uri name="http://release.niem.gov/niem/proxy/xsd/4.0/" uri="proxy/xsd/4.0/xs.xsd"/>
-  <uri name="http://release.niem.gov/niem/structures/3.0/" uri="utility/structures/4.0/structures.xsd"/>
+  <uri name="http://release.niem.gov/niem/structures/4.0/" uri="utility/structures/4.0/structures.xsd"/>
   <uri name="http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/" uri="utility/code-lists-spec/4.0/code-lists-instance.xsd"/>
   <uri name="http://api.nsgreg.nga.mil/geo-political/GENC/3/3-6" uri="codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv"/>
   <uri name="urn:us:gov:dod:nga:def:geo-political:GENC:3:3-6" uri="codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv"/>

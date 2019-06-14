@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c975a29-0850-4af8-b88a-318485076120" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/charles_letcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schemas/exchange/EMLC.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/EMLC.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schemas/exchange/EMLCCodeLists.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/EMLCCodeLists.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schemas/exchange/MutualAidDetail.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/MutualAidDetail.xsd" afterDir="false" />
@@ -17,6 +19,65 @@
       <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Power.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Power.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Radiological.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Radiological.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schemas/exchange/em_base.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/em_base.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/edxl-cap/4.0/edxl-cap.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/edxl-cap/4.0/edxl-cap.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/edxl-de/4.0/edxl-de.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/edxl-de/4.0/edxl-de.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/edxl-have/4.0/edxl-have.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/edxl-have/4.0/edxl-have.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/fema/4.0/fema_rtlt.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/fema/4.0/fema_rtlt.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/geospatial/4.0/geospatial.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/adapters/geospatial/4.0/geospatial.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/aamva_d20/4.0/aamva_d20.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/aamva_d20/4.0/aamva_d20.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/ag_codes/4.0/ag_codes.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/ag_codes/4.0/ag_codes.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/apco_event/4.0/apco_event.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/apco_event/4.0/apco_event.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/atf/4.0/atf.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/atf/4.0/atf.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/canada_post/4.0/post-canada.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/canada_post/4.0/post-canada.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/cbrncl/4.0/cbrncl.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/cbrncl/4.0/cbrncl.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/census_commodity/4.0/census_commodity.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/census_commodity/4.0/census_commodity.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/census_uscounty/4.0/census_uscounty.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/census_uscounty/4.0/census_uscounty.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/dea_ctlsub/4.0/dea.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/dea_ctlsub/4.0/dea.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/dod_jcs-pub2.0/4.0/dod_jcs-pub2.0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/dod_jcs-pub2.0/4.0/dod_jcs-pub2.0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/dol_soc/4.0/dol_soc.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/dol_soc/4.0/dol_soc.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/dot_hazmat/4.0/dot_hazmat.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/dot_hazmat/4.0/dot_hazmat.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/edxl_have/4.0/have-codes.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/edxl_have/4.0/have-codes.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/edxl_rm/4.0/edxl_rm.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/edxl_rm/4.0/edxl_rm.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_cjis/4.0/fbi_cjis.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_cjis/4.0/fbi_cjis.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_ncic/4.0/fbi_ncic.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_ncic/4.0/fbi_ncic.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_ndex/4.0/fbi_ndex.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_ndex/4.0/fbi_ndex.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_nibrs/4.0/fbi_nibrs.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_nibrs/4.0/fbi_nibrs.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_ucr/4.0/fbi_ucr.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fbi_ucr/4.0/fbi_ucr.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fips_5-2/4.0/fips_5-2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/fips_5-2/4.0/fips_5-2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/hl7/4.0/hl7.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/hl7/4.0/hl7.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/iso_3166-1/4.0/iso_3166.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/iso_3166-1/4.0/iso_3166.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/iso_4217/4.0/iso_4217.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/iso_4217/4.0/iso_4217.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/iso_639-3/4.0/iso_639-3.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/iso_639-3/4.0/iso_639-3.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/it_codes/4.0/it_codes.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/it_codes/4.0/it_codes.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/jc3iedm/4.0/jc3iedm.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/jc3iedm/4.0/jc3iedm.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/jp3-52/4.0/jp3-52.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/jp3-52/4.0/jp3-52.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/mmucc/4.0/mmucc.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/mmucc/4.0/mmucc.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/nga_datum/4.0/nga_datum.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/nga_datum/4.0/nga_datum.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/nlets/4.0/nlets.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/nlets/4.0/nlets.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/occs_facility/4.0/occs_facility.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/occs_facility/4.0/occs_facility.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/pmise_sar/4.0/sar.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/pmise_sar/4.0/sar.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/unece_rec20/4.0/unece_rec20-misc.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/unece_rec20/4.0/unece_rec20-misc.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/usda_fsa/4.0/usda_fsa.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/usda_fsa/4.0/usda_fsa.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/usps_states/4.0/usps_states.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/usps_states/4.0/usps_states.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/xCard/4.0/xCard.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/codes/xCard/4.0/xCard.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/agriculture/4.0/agriculture.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/agriculture/4.0/agriculture.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/biometrics/4.0/biom.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/biometrics/4.0/biom.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/cbrn/4.0/cbrn.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/cbrn/4.0/cbrn.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/emergencyManagement/4.0/emergencyManagement.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/emergencyManagement/4.0/emergencyManagement.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/humanServices/4.0/hs.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/humanServices/4.0/hs.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/immigration/4.0/immigration.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/immigration/4.0/immigration.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/infrastructureProtection/4.0/infrastructureProtection.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/infrastructureProtection/4.0/infrastructureProtection.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/intelligence/4.0/intelligence.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/intelligence/4.0/intelligence.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/internationalTrade/4.0/internationalTrade.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/internationalTrade/4.0/internationalTrade.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/jxdm/6.0/jxdm.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/jxdm/6.0/jxdm.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/maritime/4.0/maritime.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/maritime/4.0/maritime.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/militaryOperations/4.0/mo.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/militaryOperations/4.0/mo.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/screening/4.0/screening.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/screening/4.0/screening.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/surfaceTransportation/4.0/st.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/surfaceTransportation/4.0/st.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/proxy/xsd/4.0/xs.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/proxy/xsd/4.0/xs.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/utility/structures/4.0/structures.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/utility/structures/4.0/structures.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/xml-catalog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/xml-catalog.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +94,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/schemas/exchange/em_base.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4" />
+            <state relative-caret-position="135">
+              <caret line="9" column="143" selection-start-line="9" selection-start-column="143" selection-end-line="9" selection-end-column="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-111">
+              <caret line="6023" column="61" selection-start-line="6023" selection-start-column="46" selection-end-line="6023" selection-end-column="61" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -45,16 +117,28 @@
       <find>xs:appinfo</find>
       <find>CodeListDocument</find>
       <find>SchemaDocument</find>
+      <find>http://release.niem.gov/niem/structures/3.0/</find>
+      <find>extension</find>
+      <find>structures:AugmentationType</find>
     </findStrings>
     <replaceStrings>
       <replace>ct:conformanceTargets=&quot;http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument&quot;</replace>
+      <replace>http://release.niem.gov/niem/structures/4.0/</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/schemas/exchange</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/schemas/exchange/em_base.xsd" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1440" />
@@ -84,6 +168,76 @@
               <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
               <item name="schemas" type="462c0819:PsiDirectoryNode" />
               <item name="exchange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-core" type="462c0819:PsiDirectoryNode" />
+              <item name="4.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="structures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="structures" type="462c0819:PsiDirectoryNode" />
+              <item name="4.0" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -126,15 +280,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560522931897</updated>
-      <workItem from="1560522933242" duration="1755000" />
+      <workItem from="1560522933242" duration="3848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1755000" />
+    <option name="totallyTimeSpent" value="3848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -193,9 +348,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/utility/structures/4.0/structures.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="6023" column="61" selection-start-line="6023" selection-start-column="46" selection-end-line="6023" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/schemas/exchange/em_base.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4" />
+        <state relative-caret-position="135">
+          <caret line="9" column="143" selection-start-line="9" selection-start-column="143" selection-end-line="9" selection-end-column="143" />
+        </state>
       </provider>
     </entry>
   </component>
