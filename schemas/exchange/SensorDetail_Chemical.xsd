@@ -16,126 +16,126 @@
 	<xs:element name="AcidValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Acid Value in PPM
+				an Acid Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AmmoniaValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Ammonia Value in PPM
+				an Ammonia Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="CarbonDioxideValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Carbon Dioxide Value in PPM
+				a Carbon Dioxide Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="CarbonMonoxideValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Carbon Monoxide Value in PPM
+				a Carbon Monoxide Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ChlorineValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Chlorine Value in PPM
+				a Chlorine Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="DiboraneValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Diborane Value in PPM
+				a Diborane Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HydrogenValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Hydrogen Value in PPM
+				a Hydrogen Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HydrogenCyanideValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Hydrogen Cyanide Value in PPM
+				a Hydrogen Cyanide Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HydrogenFlourideValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Hydrogen Flouride Value in PPM
+				a Hydrogen Flouride Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HydrogenSulfideValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Hydrogen Sulfide Value in PPM
+				a Hydrogen Sulfide Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IodineValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Iodine Value in PPM
+				a Iodine Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MethaneValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Methane Value in PPM
+				a Methane Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="NitrogenDioxideValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Nitrogen Dioxide Value in PPM
+				a Nitrogen Dioxide Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OtherChemical" type="sensor:OtherSensorType">
 		<xs:annotation>
 			<xs:documentation>
-				Another type of chemical sensor
+				a type of chemical sensor
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OxygenValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Oxygen Value in PPM
+				a Oxygen Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PhosgeneValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Phosgene Value in PPM
+				a Phosgene Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PhosphineValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Phosphine Value in PPM
+				a Phosphine Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="SulfurDioxideValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Sulfur Dioxide Value in PPM
+				a Sulfur Dioxide Value in PPM
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>

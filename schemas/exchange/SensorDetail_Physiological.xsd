@@ -16,112 +16,112 @@
 	<xs:element name="BloodGlucoseLevelValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The blood glucose reading.
+a blood glucose reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="BloodPressure" type="phydet:BloodPressureType">
 		<xs:annotation>
 			<xs:documentation>
-The blood pressure reading.
+a blood pressure reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="BloodPressureDiastolicValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The diastolic reading in mmHg.
+a diastolic reading in mmHg.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="BloodPressureSystolicValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The systolic reading in mmHg.
+a systolic reading in mmHg.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="BodyTemperatureValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The body temperature reading in Celsius.
+a body temperature reading in Celsius.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="CO2LevelValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The carbon dioxide reading.
+a carbon dioxide reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HeartRateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The heart rate reading in beats per minute.
+a heart rate reading in beats per minute.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="Hydration" type="phydet:HydrationType">
 		<xs:annotation>
 			<xs:documentation>
-The hydration readings.
+a hydration readings.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HydrationMagnesiumValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The hydration magnesium reading.
+a hydration magnesium reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HydrationPotassiumValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The hydration potassium reading.
+a hydration potassium reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HydrationSodiumValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The hydration sodium reading.
+a hydration sodium reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OtherPhysiological" type="sensor:OtherSensorType">
 		<xs:annotation>
 			<xs:documentation>
-Another physiological sensor
+a physiological reading
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PhysicalStrainIndexValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The physical strain index reading.
+a physical strain index reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PulseOximetryPercent" type="niem-xs:decimal">
 		<xs:annotation>
 			<xs:documentation>
-The oximetry reading.
+an oximetry reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="RespirationRateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-The respiration rate reading in breaths per minute.
+a respiration rate reading in breaths per minute.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="BloodPressureType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing blood pressure readings.
+A data type containing blood pressure readings.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -136,7 +136,7 @@ A type containing blood pressure readings.
 	<xs:complexType name="HydrationType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing hydration readings.
+A data type containing hydration readings.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>

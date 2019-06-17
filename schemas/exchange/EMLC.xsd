@@ -31,49 +31,49 @@ An incident or resource event.
 	<xs:element name="EventDetailAbstract" abstract="true">
 		<xs:annotation>
 			<xs:documentation>
-Additional information providing more detail about the event.
+An abstract of additional information providing more detail about the event.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentDetail" type="emlc:IncidentDetailType" substitutionGroup="emlc:EventDetailAbstract">
 		<xs:annotation>
 			<xs:documentation>
-Additional information needed to sufficiently describe an incident.
+A record of additional information needed to sufficiently describe an incident.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentIdentifier" type="nc:IdentificationType" substitutionGroup="nc:OrganizationAugmentationPoint">
 		<xs:annotation>
 			<xs:documentation>
-The identifier used within the owning organization to identify the incident.
+An identifier used within the owning organization to identify the incident.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentLocationExtension" type="emlc:IncidentLocationExtensionType">
 		<xs:annotation>
 			<xs:documentation>
-Alternate methods of describing the resource's location.
+An alternate method of describing the resource's location.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentOwningOrganization" type="emlc:IncidentOrganizationType">
 		<xs:annotation>
 			<xs:documentation>
-Whatever organization is responsible for responding to the incident.
+An organization that is responsible for responding to the incident.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentStatus" type="emlc:IncidentStatusType">
 		<xs:annotation>
 			<xs:documentation>
-The status of the incident (e.g. if the incident is active or closed).
+A status of the incident (e.g. if the incident is active or closed).
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentPrimaryStatus" type="emcd:IncidentPrimaryStatusCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The primary status type for an incident. This is made up of a small, general set of terms that are further described by the secondary status terms.
+A primary status type for an incident. This is made up of a small, general set of terms that are further described by the secondary status terms.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -87,28 +87,28 @@ A more descriptive status type for an incident that compliments the primary stat
 	<xs:element name="IncidentEIDDCode" type="emcd:IncidentEIDDStatusCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The set of incident status codes contained within the EIDD documentation.
+A set of incident status codes contained within the EIDD documentation.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentEIDDStatus" type="emlc:IncidentEIDDStatusType" substitutionGroup="emlc:IncidentSecondaryStatus">
 		<xs:annotation>
 			<xs:documentation>
-The set of incident status codes contained within the EIDD documentation.
+A set of incident status codes contained within the EIDD documentation.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentPulsePointCode" type="emcd:IncidentPulsePointStatusCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The set of incident status codes contained within the PulsePoint documentation.
+A set of incident status codes contained within the PulsePoint documentation.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IncidentPulsePointStatus" type="emlc:IncidentPulsePointStatusType" substitutionGroup="emlc:IncidentSecondaryStatus">
 		<xs:annotation>
 			<xs:documentation>
-The set of incident status codes contained within the PulsePoint documentation.
+A set of incident status codes contained within the PulsePoint documentation.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -122,28 +122,28 @@ A free text field for describing the primary incident status type in further det
 	<xs:element name="InfrastructureLocationExtension" type="emlc:IncidentLocationExtensionType">
 		<xs:annotation>
 			<xs:documentation>
-Alternate methods of describing the infrastructure's location.
+An alternate methods of describing the infrastructure's location.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="InfrastructureDetail" type="emlc:InfrastructureDetailType" substitutionGroup="emlc:EventDetailAbstract">
 		<xs:annotation>
 			<xs:documentation>
-Additional information needed to sufficiently describe the status of fixed infrastructure.
+A detail of additional information needed to sufficiently describe the status of fixed infrastructure.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="InfrastructureStatus" type="emlc:InfrastructureStatusType">
 		<xs:annotation>
 			<xs:documentation>
-The status of fixed infrastructure
+A status of fixed infrastructure
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="InfrastructurePrimaryStatusCode" type="emcd:InfrastructurePrimaryStatusCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The status type for fixed infrastrucutre. This is made up of a small, general set of terms.
+A status type for fixed infrastrucutre. This is made up of a small, general set of terms.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -157,14 +157,14 @@ A more descriptive status type for infrastructure that compliments the primary s
 	<xs:element name="InfrastructureStatusReason" type="niem-xs:string">
 		<xs:annotation>
 			<xs:documentation>
-Free text string for describing reason for the infrastructure status
+A free text string for describing reason for the infrastructure status
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="InfrastructureDegradedPercent" type="niem-xs:decimal">
 		<xs:annotation>
 			<xs:documentation>
-The estimated percent that fixed infrastructure is degraded.
+An estimated percent that fixed infrastructure is degraded.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -178,35 +178,35 @@ The estimated percent that fixed infrastructure is degraded.
 	<xs:element name="InfrastructureTrendCode" type="emcd:InfrastructureTrendCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The trend of infrstructure status since last report.
+A trend of infrstructure status since last report.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PointOfContact" type="nc:ContactInformationType">
 		<xs:annotation>
 			<xs:documentation>
-The Point of Contact Information
+A Point of Contact Information
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceControllingOrganization" type="emlc:ResourceOrganizationType">
 		<xs:annotation>
 			<xs:documentation>
-Whatever organization is responsible for controlling the resource. If not noted, then assume the owning organization is the controlling organization.
+An organization that is responsible for controlling the resource. If not noted, then assume the owning organization is the controlling organization.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceDetail" type="emlc:ResourceDetailType" substitutionGroup="emlc:EventDetailAbstract">
 		<xs:annotation>
 			<xs:documentation>
-Additional information needed to sufficiently describe a resource.
+An additional information needed to sufficiently describe a resource.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceIdentifier" type="nc:IdentificationType" substitutionGroup="nc:OrganizationAugmentationPoint">
 		<xs:annotation>
 			<xs:documentation>
-The identifier used within the controlling organization to identify the resource.
+An identifier used within the controlling organization to identify the resource.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -218,21 +218,21 @@ The identifier used within the controlling organization to identify the resource
 	<xs:element name="ResourceOwningOrganization" type="emlc:ResourceOrganizationType">
 		<xs:annotation>
 			<xs:documentation>
-Whatever organization owns the resource.
+An organization that owns the resource.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceStatus" type="emlc:ResourceStatusType">
 		<xs:annotation>
 			<xs:documentation>
-The current status of the resource.
+A current status of the resource.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourcePrimaryStatus" type="emcd:ResourcePrimaryStatusCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The primary status type for an resource. This is made up of a small, general set of terms that are further described by the secondary status terms.
+A primary status type for an resource. This is made up of a small, general set of terms that are further described by the secondary status terms.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -246,28 +246,28 @@ A more descriptive status type for an resource that compliments the primary stat
 	<xs:element name="ResourceEIDDCode" type="emcd:ResourceEIDDStatusCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The set of resource status codes contained within the EIDD documentation.
+A set of resource status codes contained within the EIDD documentation.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceEIDDStatus" type="emlc:ResourceEIDDStatusType" substitutionGroup="emlc:ResourceSecondaryStatus">
 		<xs:annotation>
 			<xs:documentation>
-The set of resource status codes contained within the EIDD documentation.
+A set of resource status codes contained within the EIDD documentation.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceUCADCode" type="emcd:ResourceUCADStatusCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The set of resource status codes contained within the UCAD documentation.
+A set of resource status codes contained within the UCAD documentation.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceUCADStatus" type="emlc:ResourceUCADStatusType" substitutionGroup="emlc:ResourceSecondaryStatus">
 		<xs:annotation>
 			<xs:documentation>
-The set of resource status codes contained within the UCAD documentation.
+A set of resource status codes contained within the UCAD documentation.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -289,7 +289,7 @@ A free text field for describing the primary resource status type in further det
 	<xs:complexType name="EventType">
 		<xs:annotation>
 			<xs:documentation>
-A type that extends the emevent:EventType, adding in incident and resource elements.
+A data type that extends the emevent:EventType, adding in incident and resource elements.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -304,7 +304,7 @@ A type that extends the emevent:EventType, adding in incident and resource eleme
 	<xs:complexType name="IncidentLocationExtensionType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the additional location fields necessary to adequately describe the location of an incident.
+A data type containing the additional location fields necessary to adequately describe the location of an incident.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -321,7 +321,7 @@ A type containing the additional location fields necessary to adequately describ
 	<xs:complexType name="IncidentDetailType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing a limited amount of information to further describe an incident.
+A data type containing a limited amount of information to further describe an incident.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -340,7 +340,7 @@ A type containing a limited amount of information to further describe an inciden
 	<xs:complexType name="IncidentEIDDStatusType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the EIDD status of the incident
+A data type containing the EIDD status of the incident
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -354,7 +354,7 @@ A type containing the EIDD status of the incident
 	<xs:complexType name="IncidentOrganizationType">
 		<xs:annotation>
 			<xs:documentation>
-An organization that manages the response to an incident
+a data type representing an organization that manages the response to an incident
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -370,7 +370,7 @@ An organization that manages the response to an incident
 	<xs:complexType name="IncidentPulsePointStatusType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the PulsePoint status of the incident
+				a data type representing the PulsePoint status of the incident
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -384,7 +384,7 @@ A type containing the PulsePoint status of the incident
 	<xs:complexType name="IncidentStatusType">
 		<xs:annotation>
 			<xs:documentation>
-A type contianing the primary and secondary resource statuses.
+				a data type representing the primary and secondary resource statuses.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -399,7 +399,7 @@ A type contianing the primary and secondary resource statuses.
 	<xs:complexType name="InfrastructureStatusType">
 		<xs:annotation>
 			<xs:documentation>
-A type contianing the primary and secondary and reson for infrastructure statuses.
+				a data type representing the primary and secondary and reason for infrastructure statuses.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -415,7 +415,7 @@ A type contianing the primary and secondary and reson for infrastructure statuse
 	<xs:complexType name="InfrastructureDetailType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing a limited amount of information to further describe the status of fixed infrastructure
+				a data type representing a limited amount of information to further describe the status of fixed infrastructure
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -434,7 +434,7 @@ A type containing a limited amount of information to further describe the status
 	<xs:complexType name="ResourceDetailType">
 		<xs:annotation>
 			<xs:documentation>
-A type contianing a limited amount of information to further describe a resource.
+				a data type representing a limited amount of information to further describe a resource.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -451,7 +451,7 @@ A type contianing a limited amount of information to further describe a resource
 	<xs:complexType name="ResourceOrganizationType">
 		<xs:annotation>
 			<xs:documentation>
-An organization that manages emergency management resources.
+				a data type representing an organization that manages emergency management resources.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -467,7 +467,7 @@ An organization that manages emergency management resources.
 	<xs:complexType name="ResourceEIDDStatusType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the EIDD status of the resource.
+				a data type representing the EIDD status of the resource.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -481,7 +481,7 @@ A type containing the EIDD status of the resource.
 	<xs:complexType name="ResourceStatusType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the primary and secondary resource statuses.
+			a data type representing the primary and secondary resource statuses.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -496,7 +496,7 @@ A type containing the primary and secondary resource statuses.
 	<xs:complexType name="ResourceUCADStatusType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the UCAD status of the resource.
+				a data type representing containing the UCAD status of the resource.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -510,7 +510,7 @@ A type containing the UCAD status of the resource.
 	<xs:complexType name="EmailAddressType">
 		<xs:annotation>
 			<xs:documentation>
-A string to desribe a formatted email address
+				a data type representing a formatted email address
 					</xs:documentation>
 		</xs:annotation>
 		<xs:simpleContent>
@@ -522,7 +522,7 @@ A string to desribe a formatted email address
 	<xs:complexType name="TextStatusType">
 		<xs:annotation>
 			<xs:documentation>
-        A type containing the free status of the resource.
+        A data type containing the free status of the resource.
       </xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -536,7 +536,7 @@ A string to desribe a formatted email address
 	<xs:attribute name="sourceID" type="xs:string">
 		<xs:annotation>
 			<xs:documentation>
-        A name or URI for a controlled vocabulary.
+        A data type for name or URI for a controlled vocabulary.
       </xs:documentation>
 		</xs:annotation>
 	</xs:attribute>

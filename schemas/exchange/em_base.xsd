@@ -195,7 +195,8 @@ A distance north within a USNG zone.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
-			<!-- 	<xs:extension base="emevent:RestrictedCommentType"> -->
+			<!-- <xs:extension base="emevent:RestrictedCommentType">  -->
+
 			<xs:extension base="structures:ObjectType">
 				<xs:sequence>
 					<xs:element ref="nc:OrganizationIdentification"/>
@@ -207,7 +208,7 @@ A distance north within a USNG zone.
 	</xs:complexType>
 	<xs:element name="EventTypeDescriptorAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type EventTypeDescriptorType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="EventTypeDescriptorType">
@@ -242,7 +243,7 @@ A distance north within a USNG zone.
 	</xs:complexType>
 	<xs:element name="EventIdentificationAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type EventIdentificationType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="EventIdentificationType">
@@ -252,17 +253,18 @@ a data type for a representation of an identity as a single identifier.  Does no
         </xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
-			<xs:restriction base="nc:IdentificationType">
+			<!-- <xs:restriction base="nc:IdentificationType">  -->
+			<xs:extension base="structures:ObjectType">
 				<xs:sequence>
 					<xs:element ref="nc:IdentificationID" minOccurs="1" maxOccurs="1"/>
 					<xs:element ref="emevent:EventIdentificationAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
-			</xs:restriction>
+			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:element name="EventLinkAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type EventLinkType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="EventLinkType">
@@ -284,7 +286,7 @@ a data type for a unidirectional relationship from the process or object describ
 	</xs:complexType>
 	<xs:element name="AddressAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type AddressType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="AddressType">
@@ -302,14 +304,13 @@ a data type for a unidirectional relationship from the process or object describ
 					<xs:element ref="nc:LocationCountry" minOccurs="0" maxOccurs="1"/>
 					<xs:element ref="nc:LocationPostalCode" minOccurs="0" maxOccurs="1"/>
 					<xs:element ref="nc:LocationPostalExtensionCode" minOccurs="0" maxOccurs="1"/>
-					<xs:element ref="emevent:AddressAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:element name="EventAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type EventType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="EventType">
@@ -332,7 +333,7 @@ a data type for a unidirectional relationship from the process or object describ
 	</xs:complexType>
 	<xs:element name="LocalIdentificationAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type LocalIdentificationType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="LocalIdentificationType">
@@ -353,7 +354,7 @@ a data type for a unidirectional relationship from the process or object describ
 	</xs:complexType>
 	<xs:element name="RestrictedEventAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type RestrictedEventType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="RestrictedEventType">
@@ -363,7 +364,8 @@ a data type - restriction on the milops event type that significantly limits wha
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
-			<xs:restriction base="mo:EventType">
+			<!-- <xs:restriction base="mo:EventType">  -->
+			<xs:extension base="structures:ObjectType">
 				<xs:sequence>
 					<!--<xs:element ref="mo:EventID"/>-->
 					<xs:element ref="emevent:EventTypeDescriptor"/>
@@ -372,12 +374,12 @@ a data type - restriction on the milops event type that significantly limits wha
 					<xs:element ref="mo:EventMessageDateTime"/>
 					<xs:element ref="emevent:RestrictedEventAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
-			</xs:restriction>
+			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:element name="USNGCoordinateAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type USNGCoordinateType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="USNGCoordinateType">
@@ -396,15 +398,18 @@ a data type for United States National Grid (USNG) which represents a location u
 					<xs:element ref="emevent:USNGGridZoneID" minOccurs="1" maxOccurs="1"/>
 					<xs:element ref="emevent:USNGGridZoneSquareID" minOccurs="1" maxOccurs="1"/>
 					<xs:element ref="emevent:USNGCoordinate" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="emevent:USNGCoordinateAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:element name="RestrictedCommentAugmentationPoint" abstract="true">
 		<xs:annotation>
-			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+			<xs:documentation>An augmentation point for type RestrictedCommentType</xs:documentation>
 		</xs:annotation>
 	</xs:element>
+
+	<!-- 					<xs:element ref="emevent:RestrictedCommentAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>  -->
 	<xs:complexType name="RestrictedCommentType">
 		<xs:annotation>
 			<xs:documentation>
@@ -412,13 +417,14 @@ A data type - restriction on the niem-core CommentType that limits what elements
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
-			<xs:restriction base="nc:CommentType">
+			<!-- <xs:restriction base="nc:CommentType">  -->
+			<xs:extension base="structures:ObjectType">
 				<xs:sequence>
 					<xs:element ref="nc:CommentCreationDate" minOccurs="1" maxOccurs="1"/>
 					<xs:element ref="nc:CommentText" minOccurs="1" maxOccurs="1"/>
 					<xs:element ref="emevent:RestrictedCommentAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
-			</xs:restriction>
+			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 </xs:schema>

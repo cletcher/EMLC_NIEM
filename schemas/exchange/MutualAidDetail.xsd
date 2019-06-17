@@ -22,14 +22,14 @@
 	<xs:element name="AidRequested" type="maid:AidRequestedType" substitutionGroup="maid:MutualAidMessage">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid request.
+A request required to make a mutual aid request.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidResponding" type="maid:AidRespondingType" substitutionGroup="maid:MutualAidMessage">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+A response for make a mutual aid request.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -44,98 +44,98 @@ The information required to make a mutual aid response.
 	<xs:element name="MutualAidDetail" type="maid:MutualAidDetailsType" substitutionGroup="emlc:EventDetailAbstract">
 		<xs:annotation>
 			<xs:documentation>
-Additional information needed to sufficiently describe a mutual aid request or response.
+An info packet to describe a mutual aid request or response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidRequestedGenericResourceKind" type="maid:AidRequestedGenericResourceKindType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="Quantity" type="nc:QuantityType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="EstimatedArrivalDateTime" type="niem-xs:dateTime">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceTypeDescriptiorExtension" type="niem-xs:string">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ResourceTypeCode" type="emcd:EventTypeCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidRespondingContactInformation" type="nc:ContactInformationType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidRespondingResources" type="maid:AidRespondingResourcesKindType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidRespondingResourceTypeKind" type="maid:AidRespondingResourceTypeKindType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidRespondingPerson" type="maid:AidRespondingPersonType" substitutionGroup="maid:AidRespondingResourcesGroup">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidRespondingRank" type="maid:RestrictedValueType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="EstimatedAvailabilityDateTimeRange" type="nc:DateRangeType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidRespondingCredential" type="maid:RestrictedValueType">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AidRespondingEquipment" type="maid:AidRespondingEquipmentType" substitutionGroup="maid:AidRespondingResourcesGroup">
 		<xs:annotation>
 			<xs:documentation>
-The information required to make a mutual aid response.
+				An info packet  required to make a mutual aid response.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -177,7 +177,7 @@ The information required to make a mutual aid response.
 	<xs:element name="AidRequestedResources" type="maid:AidRequestedResourcesType">
 		<xs:annotation>
 			<xs:documentation>
-Resource(s) being requested.
+A Resource(s) being requested.
         </xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -205,21 +205,21 @@ A link to other EM events.
 	<xs:element name="EventLinkRelationCode" type="emcd:EventLinkRelationCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The relationship between "this" EM event and the EM event being linked to.
+A relationship between "this" EM event and the EM event being linked to.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="EventTypeCode" type="emcd:EventTypeCodeType">
 		<xs:annotation>
 			<xs:documentation>
-The formal, enumerated type code.
+A formal, enumerated type code.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="EventTypeDescriptorExtension" type="mo:CodespaceCodePairType">
 		<xs:annotation>
 			<xs:documentation>
-The community extended type code.
+A community extended type code.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -233,14 +233,14 @@ A container for the formal type code and extended type code for the EM event bei
 	<xs:element name="LinkedEventID" type="emevent:EventIdentificationType">
 		<xs:annotation>
 			<xs:documentation>
-The ID for the EM event being linked to.
+A ID for the EM event being linked to.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OwningAgencyIdentification" type="nc:IdentificationType">
 		<xs:annotation>
 			<xs:documentation>
-The identifying information for the owning agency.
+A identifying information for the owning agency.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -297,7 +297,7 @@ A description of a mission need
 	<xs:complexType name="AidRespondingType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the mutual aid response
+A data type containing the mutual aid response
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -313,7 +313,7 @@ A type containing the mutual aid response
 	<xs:complexType name="AidRequestedResourcesType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the resource type for a mutual aid request
+A data type containing the resource type for a mutual aid request
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -339,30 +339,32 @@ A type containing the resource type for a mutual aid request
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	<xs:element name="RestrictedValueAugmentationPoint" abstract="true">
+		<xs:annotation>
+			<xs:documentation>An augmentation point for type EventIdentificationType</xs:documentation>
+		</xs:annotation>
+	</xs:element>
 	<xs:complexType name="RestrictedValueType">
 	<xs:annotation>
 			<xs:documentation>
-A type containing the resource type for a mutual aid response 
+A data type containing the resource type for a mutual aid response
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
-			<xs:restriction base="emevent:ValueType">
+			<!-- <xs:restriction base="emevent:ValueType"> -->
+			<xs:extension base="structures:ObjectType">
 				<xs:sequence>
 					<xs:element ref="emevent:ValueText" minOccurs="1" maxOccurs="1"/>
 					<xs:element ref="emevent:ValueListURNText" minOccurs="0" maxOccurs="1"/>
-					<xs:element ref="emevent:ValueAugmentationPoint" minOccurs="0" maxOccurs="1"/>
-			<!--	ConTesA: an augmentation point must have a valid endpoint for the namespace
-					<xs:element ref="emevent:ValueAugmentationPoint" minOccurs="0" maxOccurs="1"/>
-					<xs:element ref="structures:ObjectAugmentationPoint" minOccurs="0" maxOccurs="1"/> -->
-
+					<xs:element ref="maid:RestrictedValueAugmentationPoint" minOccurs="0" maxOccurs="1"/>
 				</xs:sequence>
-			</xs:restriction>
+			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="AidRequestedGenericResourceType">
 		<xs:annotation>
 			<xs:documentation>
-			A type containing a mutual aid generic resource request
+			A data type containing a mutual aid generic resource request
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -377,7 +379,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="AidRequestedSpecificResourceType">
 		<xs:annotation>
 			<xs:documentation>
-			A type containing a mutual aid specific resource request
+			A data type containing a mutual aid specific resource request
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -391,7 +393,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="AidRequestedLocationExtensionType">
 		<xs:annotation>
 			<xs:documentation>
-			A type containing extended location information
+			A data type containing extended location information
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -411,7 +413,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="AidRespondingResourceTypeKindType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the resource type for a mutual aid response 
+A data type containing the resource type for a mutual aid response
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -427,7 +429,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="AidRespondingResourcesKindType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the resource type for a mutual aid response 
+A data type containing the resource type for a mutual aid response
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -441,7 +443,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="MutualAidDetailsType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing a limited amount of information to further describe a mutual aid request or response.
+A data type containing a limited amount of information to further describe a mutual aid request or response.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -456,7 +458,7 @@ A type containing a limited amount of information to further describe a mutual a
 	<xs:complexType name="AidRequestedGenericResourceKindType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the resource type for a mutual aid response 
+A data type containing the resource type for a mutual aid response
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -472,7 +474,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="EstimatedAvailabilityDateTimeRangeType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the resource type for a mutual aid response 
+A data type containing the resource type for a mutual aid response
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -487,7 +489,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="AidRespondingEquipmentType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the resource type for a mutual aid response 
+A data type containing the resource type for a mutual aid response
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -504,7 +506,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="AidRespondingPersonType">
 		<xs:annotation>
 			<xs:documentation>
-A type containing the resource type for a mutual aid response 
+A data type containing the resource type for a mutual aid response
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -522,7 +524,7 @@ A type containing the resource type for a mutual aid response
 	<xs:complexType name="CommentType">
 		<xs:annotation>
 			<xs:documentation>
-A container for a comment, the comment's source, and the date/time that a comment was made.
+A data type container for a comment, the comment's source, and the date/time that a comment was made.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -539,7 +541,7 @@ A container for a comment, the comment's source, and the date/time that a commen
 	<xs:complexType name="EventTypeDescriptorType">
 		<xs:annotation>
 			<xs:documentation>
-A container for the base hierarchical type and whatever extended type is necessary for an individual community.
+A data type container for the base hierarchical type and whatever extended type is necessary for an individual community.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -551,6 +553,12 @@ A container for the base hierarchical type and whatever extended type is necessa
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+
+	<xs:element name="EventIdentificationAugmentationPoint" abstract="true">
+		<xs:annotation>
+			<xs:documentation>An augmentation point for type EventCommentType</xs:documentation>
+		</xs:annotation>
+	</xs:element>
 	<xs:complexType name="EventIdentificationType">
 		<xs:annotation>
 			<xs:documentation>
@@ -558,12 +566,13 @@ A data type for a representation of an identity as a single identifier.  Does no
         </xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
-			<xs:restriction base="nc:IdentificationType">
+			<!-- <xs:restriction base="nc:IdentificationType"> -->
+				<xs:extension base="structures:ObjectType">
 				<xs:sequence>
 					<xs:element ref="nc:IdentificationID" minOccurs="1" maxOccurs="1"/>
-					<xs:element ref="nc:IdentificationAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="maid:EventIdentificationAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
-			</xs:restriction>
+			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="EventLinkType">
@@ -585,7 +594,7 @@ A data type for a unidirectional relationship from the process or object describ
 	<xs:complexType name="EventType">
 		<xs:annotation>
 			<xs:documentation>
-			A base event type for creating EM events from.
+			A data type, base event type for creating EM events from.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -601,7 +610,7 @@ A data type for a unidirectional relationship from the process or object describ
 	<xs:complexType name="AidRequestedType">
 		<xs:annotation>
 			<xs:documentation>
-			A type containing an Aid Request
+			A data type containing an Aid Request
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -616,7 +625,7 @@ A data type for a unidirectional relationship from the process or object describ
 	<xs:complexType name="LocalIdentificationType">
 		<xs:annotation>
 			<xs:documentation>
-A way to reference an local identifier for whatever it is an event is referring to.
+A data type to reference an local identifier for whatever it is an event is referring to.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -631,7 +640,7 @@ A way to reference an local identifier for whatever it is an event is referring 
 	<xs:complexType name="RestrictedEventType">
 		<xs:annotation>
 			<xs:documentation>
-A restriction on the milops event type that significantly limits what elements can be used.
+A data type, restriction on the milops event type that significantly limits what elements can be used.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>

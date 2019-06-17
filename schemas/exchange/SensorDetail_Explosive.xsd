@@ -33,112 +33,113 @@
 	<xs:element name="AmmoniumNitrateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Ammonium Nitrate Value
+				an Ammonium Nitrate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AmmoniumPerchlorateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Ammonium Perchlorate Value
+				an Ammonium Perchlorate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="BariumNitrateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Barium Nitrate Value
+				a Barium Nitrate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ExplosivePrecursorNoneIndicator" type="niem-xs:boolean">
 		<xs:annotation>
-			<xs:documentation> 
-				The Explosive Precursor None Indicator
+			<xs:documentation>
+				true if explosive precursor; false otherwise
+				an Explosive Precursor None Indicator
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="GuanidineNitrateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Guanidine Nitrate Value
+				a Guanidine Nitrate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HydrogenPeroxideValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Hydrogen Peroxide Value
+				a Hydrogen Peroxide Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PerchloricAcidValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Perchloric Acid Value
+				a Perchloric Acid Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PotassiumChlorateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Potassium Chlorate Value
+				a Potassium Chlorate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PotassiumNitriteValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Potassium Nitrite Value
+				a Potassium Nitrite Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PotassiumPerchlorateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Potassium Perchlorate Value
+				a Potassium Perchlorate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="SodiumChlorateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Sodium Chlorate Value
+				a Sodium Chlorate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="SodiumNitrateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Sodium Nitrate Value
+				a Sodium Nitrate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="SodiumNitriteValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Sodium Nitrite Value
+				a Sodium Nitrite Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="SodiumPerchlorateValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Sodium Perchlorate Value
+				a Sodium Perchlorate Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="TetranitromethaneValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Tetranitromethane Value
+				a Tetranitromethane Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OtherExplosivePrecursor" type="sensor:OtherSensorType">
 		<xs:annotation>
 			<xs:documentation>
-				Another type of explosive precursor sensor
+				a type of explosive precursor sensor
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -146,462 +147,462 @@
 	<xs:element name="AcetyleneOrAcetylideCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Acetylene Or Acetylide Compounds Value
+				a Acetylene Or Acetylide Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AciNitroSaltsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Aci Nitro Salts Value
+				a Aci Nitro Salts Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AciNitroquinonoidCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Aci Nitroquinonoid Compounds Value
+				a Aci Nitroquinonoid Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AcylAzidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Acyl Azides Value
+				an Acyl Azides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AcylHypohalitesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Acyl Hypohalites Value
+				an Acyl Hypohalites Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AlkylNitratesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Alkyl Nitrates Value
+				an Alkyl Nitrates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AlkylPerchloratesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Alkyl Perchlorates Value
+				an Alkyl Perchlorates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AllylTfmsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Allyl Tfms Value
+				an Allyl Tfms Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AmminemetalOxosaltsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Amminemetal Oxosalts Value
+				an Amminemetal Oxosalts Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AromaticNitratesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Aromatic Nitrates Value
+				an Aromatic Nitrates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AzidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Azides Value
+				an Azides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AziridinesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Aziridines Value
+				an Aziridines Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="AzocarbaboranesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Azocarbaboranes Value
+				an Azocarbaboranes Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="DiazoCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Diazo Compounds Value
+				a Diazo Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="DiazoniumCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Diazonium Compounds Value
+				a Diazonium Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="DifluoroaminoalkanolsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Difluoroaminoalkanols Value
+				a Difluoroaminoalkanols Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ExplosiveFamilyNoneIndicator" type="niem-xs:boolean">
 		<xs:annotation>
 			<xs:documentation>
-				The Explosive Family None Indicator
+				an Explosive Family None Indicator
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="FluoroNitroCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Fluoro Nitro Compounds Value
+				a Fluoro Nitro Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="FulminatingMetalsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Fulminating Metals Value
+				a Fulminating Metals Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="FurazanNOxidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Furazan N Oxides Value
+				a Furazan N Oxides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="HodpcSaltsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Hodpc Salts Value
+				a Hodpc Salts Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IodineCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Iodine Compounds Value
+				an Iodine Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="IsoxazolesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Isoxazoles Value
+				an Isoxazoles Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalAzideHalidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Azide Halides Value
+				a Metal Azide Halides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalAzidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Azides Value
+				a Metal Azides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalFulminatesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Fulminates Value
+				a Metal Fulminates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalHalogentatesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Halogentates Value
+				a Metal Halogentates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalHydridesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Hydrides Value
+				a Metal Hydrides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalNitrophenoxidesValue" type="niem-xs:double">
 		<xs:annotation>
-			<xs:documentation> 
-				The Metal Nitrophenoxides Value
+			<xs:documentation>
+				a Metal Nitrophenoxides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalOxidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Oxides Value
+				a Metal Oxides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalOxohalogenatesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Metal Oxohalogenates Value
+				a Metal Oxohalogenates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalOxometallatesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Metal Oxometallates Value
+				a Metal Oxometallates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalPercoloratesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Metal Percolorates Value
+				a Metal Percolorates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalPeroxidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Peroxides Value
+				a Metal Peroxides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalPeroxomolybdatesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Peroxomolybdates Value
+				a Metal Peroxomolybdates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="MetalPicramatesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Metal Picramates Value
+				a Metal Picramates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="NAzoliumNitroimidatesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The HN Azolium Nitroimidates Value
+				a HN Azolium Nitroimidates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="NitroarylCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Nitroaryl Compounds Value
+				a Nitroaryl Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="NitrosoCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Nitroso Compounds Value
+				a Nitroso Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="NMetalDerivativesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The N Metal Derivatives Value
+				a N Metal Derivatives Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="NSCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The NS Compounds Value
+				a NS Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OrganicAcidsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Organic Acids Value
+				an Organic Acids Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OrganicAzidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Organic Azides Value
+				an Organic Azides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OrganolithiumReagentsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Organolithium Reagents Value
+				an Organolithium Reagents Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OrganomineralPeroxidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Organomineral Peroxides Value
+				an Organomineral Peroxides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OximesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Oximes Value
+				an Oximes Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OxosaltsOfNitrogenousBasesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Oxosalts Of Nitrogenous Bases Value
+				an Oxosalts Of Nitrogenous Bases Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OzonidesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation>
-				The Ozonides Value
+				an Ozonides Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PerchlorateSaltsOfNitrogenousBasesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Perchlorate Salts Of Nitrogenous Bases Value
+				a Perchlorate Salts Of Nitrogenous Bases Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PerchlorylCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Perchloryl Compounds Value
+				a Perchloryl Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PeroxyacidSaltsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Peroxyacid Salts Value
+				a Peroxyacid Salts Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PeroxyacidsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Peroxyacids Value
+				a Peroxyacids Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PeroxycarbonateEstersValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Peroxycarbonate Esters Value
+				a Peroxycarbonate Esters Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PhosorusEstersValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Phosorus Esters Value
+				a Phosorus Esters Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PicratesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Picrates Value
+				a Picrates Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PlatinumCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Platinum Compounds Value
+				a Platinum Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PolyDimercuryimmoniumCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Poly Dimercuryimmonium Compounds Value
+				a Poly Dimercuryimmonium Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PolymerizationViolentValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Polymerization Violent Value
+				a Polymerization Violent Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PolynitroalkylCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Polynitroalkyl Compounds Value
+				a Polynitroalkyl Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PolynitroarylCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Polynitroaryl Compounds Value
+				a Polynitroaryl Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="SilverCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Silver Compounds Value
+				a Silver Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="StrainedRingCompoundsValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Strained Ring Compounds Value
+				a Strained Ring Compounds Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="TetrazolesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Tetrazoles Value
+				a Tetrazoles Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="TriazolesValue" type="niem-xs:double">
 		<xs:annotation>
 			<xs:documentation> 
-				The Triazoles Value
+				a Triazoles Value
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OtherExplosiveFamily" type="sensor:OtherSensorType">
 		<xs:annotation>
 			<xs:documentation>
-				Another type of explosive family sensor
+				a type of explosive family sensor
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:complexType name="ExplosiveFamilyType">
 		<xs:annotation>
 			<xs:documentation>
-				A type containing readings for explosive family sensors.
+				A data type containing readings for explosive family sensors.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
@@ -679,7 +680,7 @@
 	<xs:complexType name="ExplosivePrecursorType">
 		<xs:annotation>
 			<xs:documentation>
-				A type containing readings for explosive precursor sensors.
+				A data type containing readings for explosive precursor sensors.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>

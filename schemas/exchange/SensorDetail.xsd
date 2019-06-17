@@ -25,7 +25,7 @@
 	<xs:element name="SensorDetail" type="sensor:SensorDetailType" substitutionGroup="emlc:EventDetailAbstract">
 		<xs:annotation>
 			<xs:documentation>
-				The details from a sensor.
+				an reading with details from a sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -39,84 +39,84 @@
 	<xs:element name="SensorStatus" type="niem-xs:string">
 		<xs:annotation>
 			<xs:documentation>s
-				The status of the sensor.
+				a status of the sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ReadingDateTime" type="nc:ZuluDateTimeType">
 		<xs:annotation>
 			<xs:documentation>
-				The date and time of the sensor reading.
+				a date and time of the sensor reading.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="BiologicalDetail" type="sensor:BiologicalDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The readings of a biological detection sensor.
+				a reading of a biological detection sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ChemicalDetail" type="sensor:ChemicalDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The readings of a chemical detection sensor.
+				a reading of a chemical detection sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="DeviceDetail" type="sensor:DeviceDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The device details about the sensor.
+				a device detail about the sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="EnvironmentalDetail" type="sensor:EnvironmentalDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The readings of an environmental sensor.
+				a reading of an environmental sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="ExplosiveDetail" type="sensor:ExplosiveDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The readings of an explosive detection sensor.
+				a reading of an explosive detection sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="LocationDetail" type="sensor:LocationDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The readings of a location sensor.
+				a reading of a location sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PhysiologicalDetail" type="sensor:PhysiologicalDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The readings of a physiological sensor.
+				a reading of a physiological sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="PowerDetail" type="sensor:PowerDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The power status of the sensor.
+				a power status of the sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="RadiologicalDetail" type="sensor:RadiologicalDetailType">
 		<xs:annotation>
 			<xs:documentation>
-				The readings of a radiological detection sensor.
+				a reading of a radiological detection sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="OtherSensorDataTypeCode" type="sc:OtherSensorDataTypeCodeType">
 		<xs:annotation>
 			<xs:documentation>
-				The data type of the reading of the other sensor.
+				a data type of the reading of the other sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -130,7 +130,7 @@
 	<xs:element name="OtherSensorUnitOfMeasureText" type="niem-xs:string">
 		<xs:annotation>
 			<xs:documentation>
-				The unit of measure of the reading of the other sensor.
+				a unit of measure of the reading of the other sensor.
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
