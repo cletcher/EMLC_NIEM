@@ -1,152 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2018 sp1 (x64) (http://www.altova.com) by Brian Wilkins (ArdentMC) -->
-<xs:schema xmlns:phydet="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/physiological/" xmlns:sensor="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/" xmlns:emlc="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/" xmlns:emevent="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/" xmlns:mo="http://release.niem.gov/niem/domains/militaryOperations/4.0/" xmlns:emcd="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/" xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" targetNamespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/physiological/" elementFormDefault="qualified" version="1.0" ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument">
-	<xs:annotation>
-		<xs:documentation>The base set of element for emergency management (EM) events. This base set should be reused across the various EM message types.</xs:documentation>
-	</xs:annotation>
-	<xs:import namespace="http://release.niem.gov/niem/structures/4.0/" schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd"/>
-	<xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/" schemaLocation="em_base.xsd"/>
-	<xs:import namespace="http://release.niem.gov/niem/proxy/xsd/4.0/" schemaLocation="../subset/niem-4.0/niem/proxy/xsd/4.0/xs.xsd"/>
-	<xs:import namespace="http://release.niem.gov/niem/domains/militaryOperations/4.0/" schemaLocation="../subset/niem-4.0/niem/domains/militaryOperations/4.0/mo.xsd"/>
-	<xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/" schemaLocation="../subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd"/>
-	<xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/" schemaLocation="EMLCCodeLists.xsd"/>
-	<xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/" schemaLocation="EMLC.xsd"/>
-	<xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/" schemaLocation="SensorDetail.xsd"/>
-	<!-- ELEMENTS -->
-	<xs:element name="BloodGlucoseLevelValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a blood glucose reading.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="BloodPressure" type="phydet:BloodPressureType">
-		<xs:annotation>
-			<xs:documentation>
-a blood pressure reading.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="BloodPressureDiastolicValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a diastolic reading in mmHg.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="BloodPressureSystolicValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a systolic reading in mmHg.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="BodyTemperatureValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a body temperature reading in Celsius.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="CO2LevelValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a carbon dioxide reading.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="HeartRateValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a heart rate reading in beats per minute.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="Hydration" type="phydet:HydrationType">
-		<xs:annotation>
-			<xs:documentation>
-a hydration readings.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="HydrationMagnesiumValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a hydration magnesium reading.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="HydrationPotassiumValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a hydration potassium reading.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="HydrationSodiumValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a hydration sodium reading.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="OtherPhysiological" type="sensor:OtherSensorType">
-		<xs:annotation>
-			<xs:documentation>
-a physiological reading
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="PhysicalStrainIndexValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a physical strain index reading.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="PulseOximetryPercent" type="niem-xs:decimal">
-		<xs:annotation>
-			<xs:documentation>
-an oximetry reading.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:element name="RespirationRateValue" type="niem-xs:double">
-		<xs:annotation>
-			<xs:documentation>
-a respiration rate reading in breaths per minute.
-			</xs:documentation>
-		</xs:annotation>
-	</xs:element>
-	<xs:complexType name="BloodPressureType">
-		<xs:annotation>
-			<xs:documentation>
-A data type containing blood pressure readings.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="structures:ObjectType">
-				<xs:sequence>
-					<xs:element ref="phydet:BloodPressureDiastolicValue" minOccurs="0" maxOccurs="1"/>
-					<xs:element ref="phydet:BloodPressureSystolicValue" minOccurs="0" maxOccurs="1"/>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-	<xs:complexType name="HydrationType">
-		<xs:annotation>
-			<xs:documentation>
-A data type containing hydration readings.
-			</xs:documentation>
-		</xs:annotation>
-		<xs:complexContent>
-			<xs:extension base="structures:ObjectType">
-				<xs:sequence>
-					<xs:element ref="phydet:HydrationMagnesiumValue" minOccurs="0" maxOccurs="1"/>
-					<xs:element ref="phydet:HydrationPotassiumValue" minOccurs="0" maxOccurs="1"/>
-					<xs:element ref="phydet:HydrationSodiumValue" minOccurs="0" maxOccurs="1"/>
-				</xs:sequence>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
+<xs:schema xmlns:phydet="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/physiological/"
+           xmlns:sensor="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/"
+           xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
+           xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+           targetNamespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/physiological/"
+           elementFormDefault="qualified" version="2.0"
+           ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument">
+    <xs:annotation>
+        <xs:documentation>The base set of element for emergency management (EM) events. This base set should be reused
+            across the various EM message types.
+        </xs:documentation>
+    </xs:annotation>
+    <xs:import namespace="http://release.niem.gov/niem/structures/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/"
+               schemaLocation="em_base.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/proxy/xsd/4.0/xs.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/militaryOperations/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/domains/militaryOperations/4.0/mo.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/"
+               schemaLocation="EMLCCodeLists.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/"
+               schemaLocation="EMLC.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/"
+               schemaLocation="SensorDetail.xsd"/>
+    <!-- ELEMENTS -->
+    <xs:element name="BloodGlucoseLevelValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a blood glucose reading.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="BloodPressure" type="phydet:BloodPressureType">
+        <xs:annotation>
+            <xs:documentation>
+                a blood pressure reading.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="BloodPressureDiastolicValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a diastolic reading in mmHg.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="BloodPressureSystolicValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a systolic reading in mmHg.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="BodyTemperatureValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a body temperature reading in Celsius.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="CO2LevelValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a carbon dioxide reading.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="HeartRateValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a heart rate reading in beats per minute.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="Hydration" type="phydet:HydrationType">
+        <xs:annotation>
+            <xs:documentation>
+                a hydration readings.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="HydrationMagnesiumValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a hydration magnesium reading.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="HydrationPotassiumValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a hydration potassium reading.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="HydrationSodiumValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a hydration sodium reading.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="OtherPhysiological" type="sensor:OtherSensorType">
+        <xs:annotation>
+            <xs:documentation>
+                a physiological reading
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="PhysicalStrainIndexValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a physical strain index reading.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="PulseOximetryPercent" type="niem-xs:decimal">
+        <xs:annotation>
+            <xs:documentation>
+                an oximetry reading.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="RespirationRateValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                a respiration rate reading in breaths per minute.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="BloodPressureType">
+        <xs:annotation>
+            <xs:documentation>
+                A data type containing blood pressure readings.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="phydet:BloodPressureDiastolicValue" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="phydet:BloodPressureSystolicValue" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="HydrationType">
+        <xs:annotation>
+            <xs:documentation>
+                A data type containing hydration readings.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="phydet:HydrationMagnesiumValue" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="phydet:HydrationPotassiumValue" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="phydet:HydrationSodiumValue" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
 </xs:schema>

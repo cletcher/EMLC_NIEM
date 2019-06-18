@@ -1,0 +1,30 @@
+Charles todo
+============
+
+ConTesA upload
+Unable to extract any MPD from file 'emlc_catalog.xml'. Please try a zip file.
+NOT AN XSD FILE, no validation
+
+
+Questions for Kamran
+====================
+
+Critical Questions:
+
+1) How to implement augmentation point for restriction?
+    See em_base.xsd EventIdentificationType
+    Workaround: implemented as extension
+
+2) Where is the definition for http://reference.niem.gov/niem/resource/mpd/catalog/3.0/ ?
+    Workaround: ignored validation for emlc_catalog file
+    NOT AN XSD FILE, no validation
+
+3) What is the conformance target for catalog files?
+    Workaround: set to ExtensionSchemaDocument
+
+
+
+
+Nice to know questions:
+
+1) Does each xsl file need an appinfo section?
