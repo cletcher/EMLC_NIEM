@@ -51,14 +51,14 @@
                 <c:XMLSchemaValid>
                     <c:XMLCatalog c:pathURI="catalog/mpd-catalog.xml"/>
                 </c:XMLSchemaValid>
-                <c:IEPSampleXMLDocument c:pathURI="EMLC\v2\v2.0\schemas\sample XML instances/Event.xml"/>
-                <c:IEPSampleXMLDocument c:pathURI="EMLC\v2\v2.0\schemas\sample XML instances/Incident.xml"/>
-                <c:IEPSampleXMLDocument c:pathURI="EMLC\v2\v2.0\schemas\sample XML instances/Resource.xml"/>
-                <c:IEPSampleXMLDocument c:pathURI="EMLC\v2\v2.0\schemas\sample XML instances/Infrastructure.xml"/>
-                <c:IEPSampleXMLDocument c:pathURI="EMLC\v2\v2.0\schemas\sample XML instances/MutualAidRequest.xml"/>
-                <c:IEPSampleXMLDocument c:pathURI="EMLC\v2\v2.0\schemas\sample XML instances/MutualAidResponse.xml"/>
-                <c:IEPSampleXMLDocument c:pathURI="EMLC\v2\v2.0\schemas\sample XML instances/Sensor.xml"/>
-                <c:IEPSampleXMLDocument c:pathURI="EMLC\v2\v2.0\schemas\sample XML instances/ResourceSensor.xml"/>
+                <c:IEPSampleXMLDocument c:pathURI="../schemas/sample XML instances/Event.xml"/>
+                <c:IEPSampleXMLDocument c:pathURI="../schemas/sample XML instances/Incident.xml"/>
+                <c:IEPSampleXMLDocument c:pathURI="../schemas/sample XML instances/Resource.xml"/>
+                <c:IEPSampleXMLDocument c:pathURI="../schemas/sample XML instances/Infrastructure.xml"/>
+                <c:IEPSampleXMLDocument c:pathURI="../schemas/sample XML instances/MutualAidRequest.xml"/>
+                <c:IEPSampleXMLDocument c:pathURI="../schemas/sample XML instances/MutualAidResponse.xml"/>
+                <c:IEPSampleXMLDocument c:pathURI="../schemas/sample XML instances/Sensor.xml"/>
+                <c:IEPSampleXMLDocument c:pathURI="../schemas/sample XML instances/ResourceSensor.xml"/>
                 <c:ConformsToConformanceTarget
                         c:conformanceTargetURI="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument"/>
                 <c:ConformanceAssertion

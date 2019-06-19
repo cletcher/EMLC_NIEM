@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<jaxb:bindings
+              xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+              xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+              jaxb:version="2.0" >
+    <jaxb:bindings>
+        <jaxb:globalBindings generateValueClass="false" typesafeEnumMaxMembers="10000">
+            <xjc:simple/>
+            <xjc:typeSubstitution type="complex"/>
+        </jaxb:globalBindings>
+    </jaxb:bindings>
+
+    <jaxb:bindings schemaLocation="em_base.xsd" >
+        <jaxb:schemaBindings>
+            <jaxb:package name="com.example.base"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+
+    <jaxb:bindings schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd" >
+        <jaxb:schemaBindings>
+            <jaxb:package name="com.example.structures"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              node="/xs:schema/ xs:complexType[@name='AssociationType'] xs:element[@name=AssociationAugmentationPoint]">
+        <jaxb:class name="AssociationAugmentationPoints2"/>
+    </jaxb:bindings>
+
+
+    <!--
+
+    https://stackoverflow.com/questions/4394134/jaxb-property-value-is-already-defined-use-jaxbproperty-to-resolve-this
+
+    <bindings schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd" version="1.0">
+        <schemaBindings>
+            <package name="com.example.structures"/>
+        </schemaBindings>
+
+        <bindings node="//xs:complexType[@name='AssociationType']">
+            <bindings node=".//xs:attribute[@name='AssociationAugmentationPoint']">
+                <property name="StructureAssociationAugmentationPoint"/>
+            </bindings>
+        </bindings>
+    </bindings>
+    -->
+
+</jaxb:bindings>
+

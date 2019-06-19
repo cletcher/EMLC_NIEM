@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c975a29-0850-4af8-b88a-318485076120" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Questions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schemas/subset/otherDependencies/localTerminology.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/charles_letcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/charles_letcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schemas/exchange/binding2.xjb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schemas/exchange/bindings.xjb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/mpd-catalog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/emlc_catalog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/EMLC.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/EMLC.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/EMLCCodeLists.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/EMLCCodeLists.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/MutualAidDetail.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/MutualAidDetail.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorCodeLists.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorCodeLists.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Biological.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Biological.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Chemical.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Chemical.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Device.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Device.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Environmental.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Environmental.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Explosive.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Explosive.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Location.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Location.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Physiological.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Physiological.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Power.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Power.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Radiological.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/SensorDetail_Radiological.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Questions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schemas/exchange/em_base.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/exchange/em_base.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/external/ogc/gml/3.2.1/geometryPrimitives.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/external/ogc/gml/3.2.1/geometryPrimitives.xsd" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,62 +23,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schemas/exchange/em_base.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/emlc_catalog.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schemas/exchange/MutualAidDetail.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schemas/exchange/SensorCodeLists.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schemas/exchange/EMLCCodeLists.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schemas/exchange/EMLC.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+            <state relative-caret-position="285">
+              <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catalog/emlc_catalog.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schemas/exchange/bindings.xjb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schemas/exchange/binding2.xjb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="118" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/utility/structures/4.0/structures.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="68" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7095">
+              <caret line="473" column="19" selection-start-line="473" selection-start-column="10" selection-end-line="473" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Questions.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="480">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/external/ogc/gml/3.2.1/geometryPrimitives.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10185">
+              <caret line="679" column="38" selection-start-line="679" selection-start-column="38" selection-end-line="679" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -136,6 +130,7 @@
       <find>c:mpdClassURIList</find>
       <find>ValueAugmentationPoint</find>
       <find>specification/naming-and-design-rules</find>
+      <find>AssociationAugmentationPoint</find>
     </findStrings>
     <replaceStrings>
       <replace>ct:conformanceTargets=&quot;http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument&quot;</replace>
@@ -169,23 +164,25 @@
         <option value="$PROJECT_DIR$/schemas/exchange/SensorCodeLists.xsd" />
         <option value="$PROJECT_DIR$/schemas/exchange/EMLCCodeLists.xsd" />
         <option value="$PROJECT_DIR$/schemas/exchange/EMLC.xsd" />
-        <option value="$PROJECT_DIR$/schemas/exchange/em_base.xsd" />
         <option value="$PROJECT_DIR$/catalog/emlc_catalog.xml" />
+        <option value="$PROJECT_DIR$/schemas/subset/niem-4.0/niem/external/ogc/gml/3.2.1/geometryPrimitives.xsd" />
         <option value="$PROJECT_DIR$/Questions.txt" />
+        <option value="$PROJECT_DIR$/schemas/exchange/bindings.xjb" />
+        <option value="$PROJECT_DIR$/schemas/exchange/em_base.xsd" />
+        <option value="$PROJECT_DIR$/schemas/exchange/binding2.xjb" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1440" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,11 +212,75 @@
               <item name="schemas" type="462c0819:PsiDirectoryNode" />
               <item name="subset" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-core" type="462c0819:PsiDirectoryNode" />
+              <item name="4.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="structures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EMLC_NIEM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EMLC_NIEM" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+              <item name="subset" type="462c0819:PsiDirectoryNode" />
+              <item name="niem-4.0" type="462c0819:PsiDirectoryNode" />
+              <item name="niem" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="structures" type="462c0819:PsiDirectoryNode" />
+              <item name="4.0" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,7 +295,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -267,17 +331,19 @@
       <workItem from="1560784696999" duration="7645000" />
       <workItem from="1560864189532" duration="878000" />
       <workItem from="1560867403183" duration="5297000" />
+      <workItem from="1560883869212" duration="6262000" />
+      <workItem from="1560957701174" duration="847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22551000" />
+    <option name="totallyTimeSpent" value="29660000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17252396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2360515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -297,6 +363,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -327,24 +394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/utility/structures/4.0/structures.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/domains/internationalTrade/4.0/internationalTrade.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="1787" column="44" selection-start-line="1787" selection-start-column="20" selection-end-line="1787" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="6023" column="61" selection-start-line="6023" selection-start-column="46" selection-end-line="6023" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -435,22 +488,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schemas/subset/otherDependencies/localTerminology.xsd.xsl">
+    <entry file="file://$PROJECT_DIR$/schemas/subset/otherDependencies/localTerminology.xsd.xsl" />
+    <entry file="file://$PROJECT_DIR$/schemas/subset/otherDependencies/localTerminology.xsd">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/schemas/exchange/MutualAidDetail.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schemas/subset/otherDependencies/localTerminology.xsd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/schemas/exchange/SensorCodeLists.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="300">
           <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="82" />
         </state>
       </provider>
@@ -471,24 +522,134 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/schemas/exchange/em_base.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="285">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/emlc_catalog.xml">
+    <entry file="file://$PROJECT_DIR$/schemas/exchange/bindings.xjb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schemas/exchange/binding2.xjb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="118" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/utility/structures/4.0/structures.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="68" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7095">
+          <caret line="473" column="19" selection-start-line="473" selection-start-column="10" selection-end-line="473" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Questions.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="480">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/schemas/subset/niem-4.0/niem/external/ogc/gml/3.2.1/geometryPrimitives.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10185">
+          <caret line="679" column="38" selection-start-line="679" selection-start-column="38" selection-end-line="679" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/emlc_catalog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 JDK</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>EMLC_NIEM</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

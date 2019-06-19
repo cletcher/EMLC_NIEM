@@ -22,7 +22,15 @@ Critical Questions:
 3) What is the conformance target for catalog files?
     Workaround: set to ExtensionSchemaDocument
 
+Problem with XJC
+==================
 
+[ERROR] Property "Rows" is already defined. Use &lt;jaxb:property> to resolve this conflict.
+  line 648 of file:/Users/charles.letcher/Documents/GitHub/_NIEM/EMLC_NIEM/schemas/subset/niem-4.0/niem/external/ogc/gml/3.2.1/geometryPrimitives.xsd
+
+[ERROR] The following location is relevant to the above error
+  line 680 of file:/Users/charles.letcher/Documents/GitHub/_NIEM/EMLC_NIEM/schemas/subset/niem-4.0/niem/external/ogc/gml/3.2.1/geometryPrimitives.xsd
+Work around: changed line 680 to rows2
 
 
 Nice to know questions:
