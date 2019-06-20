@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<c:Catalog
+        xmlns:c="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/"
+        xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+        xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/">
+    <c:MPD
+            c:mpdURI="http://ardentmc.com/EMLC/2.0rev1"
+            c:mpdClassURIList=
+                    "http://reference.niem.gov/niem/specification/model-package-description/3.0/#MPD
+                     http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD"
+            c:mpdName="EMLC"
+            c:mpdVersionID="2.0rev1">
+
+        <nc:DescriptionText>The Emergency Management Loose Coupler (EMLC) IEPD facilitates the exchange of information
+            between two parties that aim to share information about an emergency management event.
+        </nc:DescriptionText>
+        <c:MPDInformation>
+            <c:AuthoritativeSource>
+                <nc:EntityOrganization>
+                    <nc:OrganizationName>Department of Homeland Security</nc:OrganizationName>
+                    <nc:OrganizationName>Science and Technology Directorate</nc:OrganizationName>
+                    <nc:OrganizationName>First Responders Group</nc:OrganizationName>
+                    <nc:OrganizationPrimaryContactInformation>
+                        <nc:ContactWebsiteURI>
+                            https://www.dhs.gov/science-and-technology/first-responders-group
+                        </nc:ContactWebsiteURI>
+                    </nc:OrganizationPrimaryContactInformation>
+                </nc:EntityOrganization>
+            </c:AuthoritativeSource>
+            <c:CreationDate>2018-09-12</c:CreationDate>
+            <c:StatusText>Draft</c:StatusText>
+            <c:KeywordText>Emergency Management</c:KeywordText>
+            <c:KeywordText>EM</c:KeywordText>
+            <c:KeywordText>EMLC</c:KeywordText>
+            <c:KeywordText>Incident</c:KeywordText>
+            <c:KeywordText>Resource</c:KeywordText>
+            <c:KeywordText>Infrastructure Status</c:KeywordText>
+            <c:KeywordText>Mutual Aid</c:KeywordText>
+            <c:KeywordText>IoT</c:KeywordText>
+            <c:KeywordText>Sensor</c:KeywordText>
+            <c:PurposeText>
+                To facilitate the exchange of information between EM stakeholder systems in support of emergency
+                management.
+            </c:PurposeText>
+        </c:MPDInformation>
+
+        <c:IEPConformanceTarget structures:id="EMLC-IEP">
+            <nc:DescriptionText>
+                An IEP class representing resource,incident, infrastructure, mutual aid, and sensor information to
+                facilitate the exchange of information between EM systems.
+            </nc:DescriptionText>
+            <c:HasDocumentElement c:qualifiedNameList="emlc:Event"/>
+            <c:XMLSchemaValid>
+                <c:XMLCatalog c:pathURI="catalog/emlc-catalog.xml"/>
+            </c:XMLSchemaValid>
+            <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/Event.xml"/>
+            <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/Incident.xml"/>
+            <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/Resource.xml"/>
+            <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/Infrastructure.xml"/>
+            <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/MutualAidRequest.xml"/>
+            <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/MutualAidResponse.xml"/>
+            <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/Sensor.xml"/>
+            <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/ResourceSensor.xml"/>
+            <c:ConformsToConformanceTarget
+                        c:conformanceTargetURI="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument"/>
+            <c:ConformanceAssertion
+                    c:pathURI="documentation/supporting documentation/conformance-assertion.txt"/>
+        </c:IEPConformanceTarget>
+
+        <!--
+        <c:Wantlist c:pathURI="base-xsd/niem/wantlist.xml"/>
+        -->
+
+        <c:ConformanceAssertion
+                c:pathURI="documentation/supporting documentation/conformance-assertion.txt"/>
+        <c:ReadMe c:pathURI="README.md"/>
+        <c:MPDChangeLog c:pathURI="documentation/change log/changelog.txt"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/em_base.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/EMLC.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/EMLCCodeLists.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/MutualAidDetail.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorCodeLists.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Biological.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Chemical.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Device.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Environmental.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Explosive.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Location.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Physiological.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Power.xsd"/>
+        <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/SensorDetail_Radiological.xsd"/>
+
+
+    </c:MPD>
+</c:Catalog>

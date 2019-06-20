@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2019 rel. 3 sp1 (http://www.altova.com) by Charles Letcher (Ardent) -->
+<xs:schema xmlns:emevent="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/"
+           xmlns:mo="http://release.niem.gov/niem/domains/militaryOperations/4.0/"
+           xmlns:emcd="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/"
+           xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
+           xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+           xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+           xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+           jaxb:extensionBindingPrefixes="xjc"
+           jaxb:version="2.0"
+           targetNamespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/"
+           elementFormDefault="qualified" version="2.0"
+           ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument">
+
+    <xs:annotation>
+        <xs:documentation>The base set of element for emergency management (EM) events. This base set should be reused
+            across the various EM message types.
+        </xs:documentation>
+    </xs:annotation>
+    <xs:import namespace="http://release.niem.gov/niem/structures/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/proxy/xsd/4.0/xs.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/militaryOperations/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/domains/militaryOperations/4.0/mo.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/"
+               schemaLocation="EMLCCodeLists.xsd"/>
+    <!-- ELEMENTS -->
+    <xs:element name="EventTypeDescriptor" type="emevent:EventTypeDescriptorType"
+                substitutionGroup="mo:EventCategoryAbstract">
+        <xs:annotation>
+            <xs:documentation>
+                A container for the formal type code and the extended type code to specify what type of thing the EM
+                event is describing.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventComment" type="emevent:EventCommentType">
+        <xs:annotation>
+            <xs:documentation>
+                A comment regarding a particular event.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventCommunityExtensionAbstract" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                A data concept - community-specific extension to a message, for which the XML schema is not known in
+                advance.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventLink" type="emevent:EventLinkType">
+        <xs:annotation>
+            <xs:documentation>
+                A link to other EM events.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="ValueText" type="nc:TextType" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                A Value from a certified list maintained by the Community of Interest (COI) for the
+                referenced element.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="Address" type="emevent:AddressType">
+        <xs:annotation>
+            <xs:documentation>A postal location to which paper mail can be directed.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="ValueListURNText" type="nc:TextType" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                A name of the certified list maintained by the Community of Interest (COI) for the value
+                referenced.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventLinkRelationCode" type="emcd:EventLinkRelationCodeType">
+        <xs:annotation>
+            <xs:documentation>
+                A relationship between "this" EM event and the EM event being linked to.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventTypeCode" type="emcd:EventTypeCodeType">
+        <xs:annotation>
+            <xs:documentation>
+                A formal, enumerated type code.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="ResourceMessageStatusKeywordValue" type="emevent:ValueType" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                A description or Code used to identify the message status of a resource message. Any value
+                from a discrete managed list, used to specify a Request Status. The content of valueListUrn is the
+                Uniform Resource Name of a published list of values and definiti
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="ResourceStatusKeywordValue" type="emevent:ValueType" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                A value from a discrete managed list, used to specify the general state of a resource if
+                known. where the content of valueListUrn is the Uniform Resource Name of a published list of values and
+                definitions, and the content of value is a string denoting
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventTypeDescriptorExtension" type="mo:CodespaceCodePairType">
+        <xs:annotation>
+            <xs:documentation>
+                A community extended type code.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="LinkedEventCategory" type="emevent:EventTypeDescriptorType">
+        <xs:annotation>
+            <xs:documentation>
+                A container for the formal type code and extended type code for the EM event being linked to.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventID" type="emevent:EventIdentificationType">
+        <xs:annotation>
+            <xs:documentation>
+                An ID for the EM event being linked to.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="LinkedEventID" type="emevent:EventIdentificationType">
+        <xs:annotation>
+            <xs:documentation>
+                An ID for the EM event being linked to.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="OwningAgencyIdentification" type="nc:IdentificationType">
+        <xs:annotation>
+            <xs:documentation>
+                A piece of identifying information for the owning agency.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="USNGCoordinate" type="emevent:USNGCoordinateType">
+        <xs:annotation>
+            <xs:documentation>
+                A coordinate from the United States National Grid (USNG) which represents a location using the Universal
+                Transverse Mercator (UTM) and the UPS grid systems and a grid labeling convention. Similar to the MGRS
+                grid.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="USNGCoordinateID" type="niem-xs:string" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                An identifier of a USNG coordinate.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="USNGEastingValue" type="niem-xs:string" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                A distance east within a USNG zone.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="USNGGridZoneID" type="niem-xs:string" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                An identifier of a USNG zone.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="USNGGridZoneSquareID" type="niem-xs:string" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                An identifier of a specific 100,000 meter squared region within a USNG zone.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="USNGNorthingValue" type="niem-xs:string" nillable="true">
+        <xs:annotation>
+            <xs:documentation>
+                A distance north within a USNG zone.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+      <xs:element name="EventCommentAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type EventCommentType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventTypeDescriptorAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type EventTypeDescriptorType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="ValueAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for ValueType.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventIdentificationAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type EventIdentificationType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventLinkAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type EventLinkType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="AddressAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type AddressType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="EventAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type EventType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="LocalIdentificationAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type LocalIdentificationType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="RestrictedEventAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type RestrictedEventType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="USNGCoordinateAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type USNGCoordinateType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="RestrictedCommentAugmentationPoint" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                An augmentation point for type RestrictedCommentType
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <!-- COMPLEX TYPES -->
+    <xs:complexType name="EventCommentType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type for a comment, the comment's source, and the date/time that a comment was made.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <!-- <xs:extension base="emevent:RestrictedCommentType">  -->
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="nc:OrganizationIdentification"/>
+                    <xs:element ref="nc:PersonHumanResourceIdentification" minOccurs="0"/>
+                    <xs:element ref="emevent:EventCommentAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EventTypeDescriptorType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type for the base hierarchical type and whatever extended type is necessary for an individual
+                community.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="emevent:EventTypeCode"/>
+                    <xs:element ref="emevent:EventTypeDescriptorExtension" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="emevent:EventTypeDescriptorAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ValueType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type of values or names from certified lists referenced by the Community of
+                Interest (COI).
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="emevent:ValueText" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="emevent:ValueListURNText" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="emevent:ValueAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EventIdentificationType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type for a representation of an identity as a single identifier. Does not have a property for the
+                identiy-assigning authority.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <!-- <xs:restriction base="nc:IdentificationType">  -->
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="nc:IdentificationID" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="emevent:EventIdentificationAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EventLinkType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type for a unidirectional relationship from the process or object described by an Event, to the
+                process or object described by another Event, or to an arbitrary resource.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="emevent:LinkedEventID"/>
+                    <xs:element ref="emevent:LinkedEventCategory"/>
+                    <xs:element ref="emevent:EventLinkRelationCode"/>
+                    <xs:element ref="emevent:EventLinkAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="AddressType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type for a geophysical location described by postal information.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="nc:AddressBuildingName" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="nc:LocationStreet" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="nc:LocationCityName" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="nc:LocationCountyName" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="nc:LocationState" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="nc:LocationCountry" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="nc:LocationPostalCode" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="nc:LocationPostalExtensionCode" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EventType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type - base event type for creating EM events from.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="emevent:RestrictedEventType">
+                <xs:sequence>
+                    <xs:element ref="emevent:EventID"/>
+                    <xs:element ref="emevent:USNGCoordinate" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="emevent:EventLink" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="emevent:EventComment" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="emevent:EventAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="LocalIdentificationType">
+        <xs:annotation>
+            <xs:documentation>
+                A data type to reference an local identifier for whatever it is an event is referring to.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="nc:IdentificationID"/>
+                    <xs:element ref="nc:OrganizationIdentification"/>
+                    <xs:element ref="emevent:LocalIdentificationAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="RestrictedEventType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type - restriction on the milops event type that significantly limits what elements can be used.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <!-- <xs:restriction base="mo:EventType">  -->
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <!--<xs:element ref="mo:EventID"/>-->
+                    <xs:element ref="emevent:EventTypeDescriptor"/>
+                    <xs:element ref="mo:EventLocation"/>
+                    <xs:element ref="mo:EventValidityDateTimeRange"/>
+                    <xs:element ref="mo:EventMessageDateTime"/>
+                    <xs:element ref="emevent:RestrictedEventAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="USNGCoordinateType">
+        <xs:annotation>
+            <xs:documentation>
+                a data type for United States National Grid (USNG) which represents a location using the Universal
+                Transverse Mercator (UTM) and the UPS grid systems.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="emevent:USNGCoordinateID" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="emevent:USNGEastingValue" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="emevent:USNGNorthingValue" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="nc:GeographicDatumAbstract" minOccurs="0" maxOccurs="1"/>
+                    <xs:element ref="emevent:USNGGridZoneID" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="emevent:USNGGridZoneSquareID" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="emevent:USNGCoordinate" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="emevent:USNGCoordinateAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="RestrictedCommentType">
+        <xs:annotation>
+            <xs:documentation>
+                A data type - restriction on the niem-core CommentType that limits what elements can be used.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <!-- <xs:restriction base="nc:CommentType">  -->
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="nc:CommentCreationDate" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="nc:CommentText" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="emevent:RestrictedCommentAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>

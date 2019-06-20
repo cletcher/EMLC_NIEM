@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 sp1 (x64) (http://www.altova.com) by Brian Wilkins (ArdentMC) -->
+<xs:schema xmlns:sensor="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/"
+           xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
+           xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/location/"
+           elementFormDefault="qualified" version="2.0"
+           ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument">
+    <xs:annotation>
+        <xs:documentation>The base set of element for emergency management (EM) events. This base set should be reused
+            across the various EM message types.
+        </xs:documentation>
+    </xs:annotation>
+    <xs:import namespace="http://release.niem.gov/niem/structures/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/"
+               schemaLocation="em_base.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/proxy/xsd/4.0/xs.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/militaryOperations/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/domains/militaryOperations/4.0/mo.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/"
+               schemaLocation="EMLCCodeLists.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/"
+               schemaLocation="EMLC.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/"
+               schemaLocation="SensorDetail.xsd"/>
+    <!-- ELEMENTS -->
+    <xs:element name="AccuracyValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The Accuracy Value
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="HeadingValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The Heading Value
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="OtherLocation" type="sensor:OtherSensorType">
+        <xs:annotation>
+            <xs:documentation>
+                Another type of location sensor
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="VelocityValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The Velocity Value
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="XAxisAccelerationRate" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The X Axis Acceleration Rate
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="XCoordinateValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The X Coordinate Value
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="YAxisAccelerationRate" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The Y Axis Acceleration Rate
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="YCoordinateValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The Y Coordinate Value
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="ZAxisAccelerationRate" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The Z Axis Acceleration Rate
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="ZCoordinateValue" type="niem-xs:double">
+        <xs:annotation>
+            <xs:documentation>
+                The Z Coordinate Value
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+</xs:schema>

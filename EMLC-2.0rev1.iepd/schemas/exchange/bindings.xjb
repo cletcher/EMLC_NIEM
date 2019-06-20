@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" schemaLocation="em_base.xsd">
+    <jxb:bindings>
+        <jxb:globalBindings typesafeEnumMaxMembers="10000"/>
+
+    </jxb:bindings>
+
+
+</jxb:bindings>
+
