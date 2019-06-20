@@ -1,0 +1,47 @@
+NIEM Conformance Assertion
+
+Assertion: This NIEM IEPD conforms to the following NIEM specifications:
+# list of URIs that the IEPD conforms to
+http://reference.niem.gov/niem/specification/conformance/3.0/
+http://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/
+http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/
+http://reference.niem.gov/niem/specification/model-package-description/3.0.1/
+
+mpdURI: TBD
+
+Author: Department of Homeland Security
+
+Certified by: Charles Letcher, Technical Consultant, ArdentMC
+
+Certification Date: June 2019
+
+Details:
+# This IEPD has been evaluated using the NIEM ConTesA business rule engine that utilizes schematron.
+
+1. How NIEM conformance was verified:
+    a. Automatic (tool) checks were performed with NIEM-aware and XML Schema tools identified below.
+    b. Manual (subjective) checks on conformance rules were performed by the author/certifier.
+    c. A general manual (subjective) cross-check for adherence to conformance rules and quality
+    assurance was performed by several of the author’s colleagues who understand NIEM and
+    XML Schema.
+
+2. Tools employed:
+    a. NIEM Schema Subset Generator (SSGT) (for NIEM 4.0) generated all subset schema documents.
+    b. Intellij 2019.1.3 Ultimate was used for cross-validation of XML schemas and XML instances.
+    c. XMLSpy Professional v2019 rel. 3 was used for validation of extension schema documents,
+        constraint schema documents, and all other XML artifacts. This tool also validated a number of NIEM NDR rules.
+    d. oXygen XML Editor v21.1 was used to cross-validate XML schemas and XML instances.
+    e. NIEM ConTesA (Conformance Testing Assistant) was used for NIEM NDR and MPD validation.
+
+3. Results:
+    a. No known major issues remain.
+    b. All XML artifacts are well-formed and valid.
+    c. Attached conformance report from NIEM ConTesA indicates 100% pass for all automatically
+    checked NIEM rules.
+    d. Author and SMEs verified that several warnings by tools are not relevant to this IEPD.
+
+
+
+
+
+
