@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
-		<File FilePath="catalog\emlc_catalog.xml" HomeFolder="Yes"/>
-	</Folder>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml"/>
 	<Folder FolderName="XSL Files" ExtStr="xsl;xslt"/>
 	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery;xqu"/>
 	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
 	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
-		<File FilePath="schemas\exchange\em_base.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\EMLC.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\EMLCCodeLists.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\MutualAidDetail.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorCodeLists.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Biological.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Chemical.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Device.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Environmental.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Explosive.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Location.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Physiological.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Power.xsd" HomeFolder="Yes"/>
-		<File FilePath="schemas\exchange\SensorDetail_Radiological.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\em_base.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\EMLC.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\EMLCCodeLists.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\MutualAidDetail.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorCodeLists.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Biological.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Chemical.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Device.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Environmental.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Explosive.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Location.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Physiological.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Power.xsd" HomeFolder="Yes"/>
+		<File FilePath="Z:\EMLC-2.0rev1.iepd\schemas\exchange\SensorDetail_Radiological.xsd" HomeFolder="Yes"/>
 	</Folder>
 	<Folder FolderName="Entities" ExtStr="ent"/>
 </Project>

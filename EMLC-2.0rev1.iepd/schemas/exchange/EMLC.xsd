@@ -96,7 +96,7 @@
             </xs:documentation>
         </xs:annotation>
     </xs:element>
-    <xs:element name="IncidentPrimaryStatusValue" type="emcd:IncidentPrimaryStatusCodeType">
+    <xs:element name="IncidentPrimaryStatus" type="emcd:IncidentPrimaryStatusCodeType">
         <xs:annotation>
             <xs:documentation>
                 A primary status type for an incident. This is made up of a small, general set of terms that are further
@@ -264,7 +264,7 @@
             </xs:documentation>
         </xs:annotation>
     </xs:element>
-    <xs:element name="ResourcePrimaryStatusValue" type="emcd:ResourcePrimaryStatusCodeType">
+    <xs:element name="ResourcePrimaryStatus" type="emcd:ResourcePrimaryStatusCodeType">
         <xs:annotation>
             <xs:documentation>
                 A primary status type for an resource. This is made up of a small, general set of terms that are further
