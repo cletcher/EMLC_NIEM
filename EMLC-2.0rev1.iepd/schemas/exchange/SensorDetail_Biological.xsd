@@ -14,12 +14,14 @@
                schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd"/>
     <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/"
                schemaLocation="em_base.xsd"/>
+
     <xs:import namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"
                schemaLocation="../subset/niem-4.0/niem/proxy/xsd/4.0/xs.xsd"/>
     <xs:import namespace="http://release.niem.gov/niem/domains/militaryOperations/4.0/"
                schemaLocation="../subset/niem-4.0/niem/domains/militaryOperations/4.0/mo.xsd"/>
     <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"
                schemaLocation="../subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd"/>
+
     <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/"
                schemaLocation="EMLCCodeLists.xsd"/>
     <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/"

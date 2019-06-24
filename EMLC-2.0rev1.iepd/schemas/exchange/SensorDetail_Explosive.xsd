@@ -3,6 +3,7 @@
            xmlns:sensor="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/"
            xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
            xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:emlc="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/"
            xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
            targetNamespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/explosive/"
            elementFormDefault="qualified" version="2.0"
@@ -621,8 +622,9 @@
                 A data type containing readings for explosive family sensors.
             </xs:documentation>
         </xs:annotation>
+
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="expdet:AcetyleneOrAcetylideCompoundsValue" minOccurs="0" maxOccurs="1"/>
                     <xs:element ref="expdet:AciNitroSaltsValue" minOccurs="0" maxOccurs="1"/>
@@ -690,7 +692,7 @@
                     <xs:element ref="expdet:TriazolesValue" minOccurs="0" maxOccurs="1"/>
                     <xs:element ref="expdet:OtherExplosiveFamily" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
-            </xs:extension>
+             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="ExplosivePrecursorType">
@@ -700,7 +702,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="expdet:AmmoniumNitrateValue" minOccurs="0" maxOccurs="1"/>
                     <xs:element ref="expdet:AmmoniumPerchlorateValue" minOccurs="0" maxOccurs="1"/>

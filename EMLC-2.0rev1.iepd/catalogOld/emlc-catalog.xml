@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:Schema
+<xs:schema
         ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument"
-        version="2.0"  xmlns:xs="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/"
+        version="2.0"  xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:c="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/"
         xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
         xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
-        xmlns:structures="http://release.niem.gov/niem/structures/4.0/">
+        xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+        xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
+        targetNamespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/"
+        elementFormDefault="qualified" >
+    <xs:annotation>
+        <xs:documentation>
+            This catalog lists resources.
+        </xs:documentation>
+       </xs:annotation>
 
+    <xs:element name="CatalogIndicator" type="niem-xs:boolean">
+        <xs:annotation>
+            <xs:documentation>
+                true if catalogt; false otherwise
+                An indicator that this is a catalog.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
     <c:Catalog>
         <c:MPD c:mpdName="EMLC"
                c:mpdVersionID="2.0"
@@ -90,4 +106,4 @@
             <c:XMLCatalog c:pathURI="base-xsd/xml-catalog.xml"/>
         </c:MPD>
     </c:Catalog>
-</xs:Schema>
+</xs:schema>

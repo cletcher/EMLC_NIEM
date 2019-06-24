@@ -1,11 +1,3 @@
-Charles todo
-============
-
-ConTesA upload
-Unable to extract any MPD from file 'emlc_catalog.xml'. Please try a zip file.
-NOT AN XSD FILE, no validation
-
-
 Questions for Kamran
 ====================
 

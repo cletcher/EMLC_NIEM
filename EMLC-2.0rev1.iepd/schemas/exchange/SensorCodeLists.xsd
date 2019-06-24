@@ -14,12 +14,15 @@
             <term:LocalTerm term="OPEX" literal="Operation Exercise"/>
         </xs:appinfo>
     </xs:annotation>
+
     <xs:import namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"
                schemaLocation="../subset/niem-4.0/niem/proxy/xsd/4.0/xs.xsd"/>
-    <xs:import namespace="http://release.niem.gov/niem/structures/4.0/"
-               schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd"/>
     <xs:import namespace="http://release.niem.gov/niem/localTerminology/3.0/"
                schemaLocation="../subset/otherDependencies/localTerminology.xsd"/>
+
+
+    <xs:import namespace="http://release.niem.gov/niem/structures/4.0/"
+               schemaLocation="../subset/niem-4.0/niem/utility/structures/4.0/structures.xsd"/>
     <xs:complexType name="OtherSensorDataTypeCodeType">
         <xs:annotation>
             <xs:documentation>

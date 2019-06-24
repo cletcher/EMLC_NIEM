@@ -51,7 +51,7 @@
             </nc:DescriptionText>
             <c:HasDocumentElement c:qualifiedNameList="emlc:Event"/>
             <c:XMLSchemaValid>
-                <c:XMLCatalog c:pathURI="catalog/emlc-catalog.xml"/>
+                <c:XMLCatalog c:pathURI="catalog/xml-catalog.xml"/>
             </c:XMLSchemaValid>
             <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/Event.xml"/>
             <c:IEPSampleXMLDocument c:pathURI="schemas/sample XML instances/Incident.xml"/>
@@ -64,7 +64,7 @@
             <c:ConformsToConformanceTarget
                         c:conformanceTargetURI="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument"/>
             <c:ConformanceAssertion
-                    c:pathURI="documentation/supporting documentation/conformance-assertion.txt"/>
+                    c:pathURI="conformance-assertion.txt"/>
         </c:IEPConformanceTarget>
 
         <!--
@@ -72,9 +72,9 @@
         -->
 
         <c:ConformanceAssertion
-                c:pathURI="documentation/supporting documentation/conformance-assertion.txt"/>
-        <c:ReadMe c:pathURI="README.md"/>
-        <c:MPDChangeLog c:pathURI="documentation/change log/changelog.txt"/>
+                c:pathURI="conformance-assertion.txt"/>
+        <c:ReadMe c:pathURI="readme.txt"/>
+        <c:MPDChangeLog c:pathURI="changelog.txt"/>
         <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/em_base.xsd"/>
         <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/EMLC.xsd"/>
         <c:ExtensionSchemaDocument c:pathURI="schemas/exchange/EMLCCodeLists.xsd"/>

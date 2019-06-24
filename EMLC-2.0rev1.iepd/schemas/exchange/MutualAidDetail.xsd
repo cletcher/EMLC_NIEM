@@ -28,9 +28,9 @@
     <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"
                schemaLocation="../subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd"/>
     <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/"
-               schemaLocation="./EMLCCodeLists.xsd"/>
+               schemaLocation="EMLCCodeLists.xsd"/>
     <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/"
-               schemaLocation="./EMLC.xsd"/>
+               schemaLocation="EMLC.xsd"/>
     <!-- ELEMENTS -->
     <xs:element name="MutualAidMessage" abstract="true">
         <xs:annotation>
@@ -329,7 +329,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:ApprovedIndicator" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:AidRespondingResources" minOccurs="0" maxOccurs="1"/>
@@ -345,7 +345,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:AidRequestedResourcesKind" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
@@ -359,7 +359,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:Quantity" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:AidRequestedMissionNeedDescription" minOccurs="1" maxOccurs="1"/>
@@ -380,7 +380,7 @@
         </xs:annotation>
         <xs:complexContent>
             <!-- <xs:restriction base="emevent:ValueType"> -->
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:ValueText" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="emevent:ValueListURNText" minOccurs="0" maxOccurs="1"/>
@@ -396,7 +396,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:Quantity" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:AidRequestedGenericResourceKind" minOccurs="1" maxOccurs="1"/>
@@ -411,7 +411,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emlc:ResourceIdentifier" minOccurs="1" maxOccurs="1"/>
                 </xs:sequence>
@@ -425,7 +425,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:Address" minOccurs="0" maxOccurs="1"/>
                     <xs:element ref="nc:AddressCrossStreet" minOccurs="0" maxOccurs="1"/>
@@ -445,7 +445,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:ResourceTypeCode" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:ResourceTypeDescriptiorExtension" minOccurs="0" maxOccurs="unbounded"/>
@@ -461,7 +461,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:AidRespondingResourcesGroup" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
@@ -476,7 +476,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <!-- todo: some stuff here -->
                     <xs:element ref="maid:MutualAidMessage" minOccurs="1"/>
@@ -491,7 +491,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:ResourceTypeCode" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:ResourceTypeDescriptiorExtension" minOccurs="0" maxOccurs="unbounded"/>
@@ -507,7 +507,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:StartDate" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="nc:EndDate" minOccurs="1" maxOccurs="1"/>
@@ -522,7 +522,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emlc:ResourceIdentifier" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:EstimatedArrivalDateTime" minOccurs="1" maxOccurs="1"/>
@@ -539,7 +539,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:PersonHumanResourceIdentification" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:EstimatedArrivalDateTime" minOccurs="1" maxOccurs="1"/>
@@ -557,7 +557,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:DateTime"/>
                     <xs:element ref="nc:OrganizationIdentification"/>
@@ -575,7 +575,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:EventTypeCode"/>
                     <xs:element ref="emevent:EventTypeDescriptorExtension" minOccurs="0" maxOccurs="unbounded"/>
@@ -598,7 +598,7 @@
         </xs:annotation>
         <xs:complexContent>
             <!-- <xs:restriction base="nc:IdentificationType"> -->
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:IdentificationID" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:EventIdentificationAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
@@ -614,7 +614,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:LinkedEventID"/>
                     <xs:element ref="emevent:LinkedEventCategory"/>
@@ -630,7 +630,9 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="emevent:RestrictedEventType">
+            <!--
+            <xs:extension base="emevent:RestrictedEventType"> -->
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:USNGCoordinate" minOccurs="0" maxOccurs="1"/>
                     <xs:element ref="emevent:EventLink" minOccurs="0" maxOccurs="unbounded"/>
@@ -646,7 +648,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:AidRequestedResources" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="maid:AidRequestedLocationExtension" minOccurs="0" maxOccurs="1"/>
@@ -661,7 +663,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:IdentificationID"/>
                     <xs:element ref="nc:OrganizationIdentification"/>
@@ -676,7 +678,8 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:restriction base="mo:EventType">
+<!--            <xs:restriction base="mo:EventType"> -->
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:EventTypeDescriptor"/>
                     <xs:element ref="mo:EventLocation"/>
@@ -684,7 +687,7 @@
                     <xs:element ref="mo:EventValidityDateTimeRange"/>
                     <xs:element ref="mo:EventMessageDateTime"/>
                 </xs:sequence>
-            </xs:restriction>
+            </xs:extension>
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="USNGCoordinateType">
@@ -695,7 +698,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:USNGCoordinateID" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="emevent:USNGEastingValue" minOccurs="1" maxOccurs="1"/>

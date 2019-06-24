@@ -6,17 +6,13 @@
            xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
            xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
            xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
-           xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+           xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
            xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
-           jaxb:extensionBindingPrefixes="xjc"
-           jaxb:version="2.0"
            targetNamespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/"
-           elementFormDefault="qualified" version="2.0"
+           elementFormDefault="qualified" version="2.0" jaxb:extensionBindingPrefixes="xjc" jaxb:version="2.0"
            ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument">
-
     <xs:annotation>
-        <xs:documentation>The base set of element for emergency management (EM) events. This base set should be reused
+        <xs:documentation>The base set of elements for emergency management (EM) events. This base set should be reused
             across the various EM message types.
         </xs:documentation>
     </xs:annotation>
@@ -30,6 +26,9 @@
                schemaLocation="../subset/niem-4.0/niem/niem-core/4.0/niem-core.xsd"/>
     <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/codes/"
                schemaLocation="EMLCCodeLists.xsd"/>
+    <xs:import namespace="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/"
+               schemaLocation="EMLC.xsd"/>
+
     <!-- ELEMENTS -->
     <xs:element name="EventTypeDescriptor" type="emevent:EventTypeDescriptorType"
                 substitutionGroup="mo:EventCategoryAbstract">
@@ -194,7 +193,7 @@
             </xs:documentation>
         </xs:annotation>
     </xs:element>
-      <xs:element name="EventCommentAugmentationPoint" abstract="true">
+    <xs:element name="EventCommentAugmentationPoint" abstract="true">
         <xs:annotation>
             <xs:documentation>
                 An augmentation point for type EventCommentType
@@ -279,14 +278,14 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <!-- <xs:extension base="emevent:RestrictedCommentType">  -->
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:OrganizationIdentification"/>
                     <xs:element ref="nc:PersonHumanResourceIdentification" minOccurs="0"/>
                     <xs:element ref="emevent:EventCommentAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:extension>
+            <!-- <xs:extension base="emevent:RestrictedCommentType">  -->
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="EventTypeDescriptorType">
@@ -297,7 +296,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:EventTypeCode"/>
                     <xs:element ref="emevent:EventTypeDescriptorExtension" minOccurs="0" maxOccurs="unbounded"/>
@@ -314,7 +313,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:ValueText" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element ref="emevent:ValueListURNText" minOccurs="0" maxOccurs="unbounded"/>
@@ -331,13 +330,13 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <!-- <xs:restriction base="nc:IdentificationType">  -->
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:IdentificationID" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="emevent:EventIdentificationAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:extension>
+            <!-- <xs:restriction base="nc:IdentificationType">  -->
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="EventLinkType">
@@ -348,7 +347,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:LinkedEventID"/>
                     <xs:element ref="emevent:LinkedEventCategory"/>
@@ -365,7 +364,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:AddressBuildingName" minOccurs="0" maxOccurs="1"/>
                     <xs:element ref="nc:LocationStreet" minOccurs="0" maxOccurs="1"/>
@@ -404,7 +403,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:IdentificationID"/>
                     <xs:element ref="nc:OrganizationIdentification"/>
@@ -413,17 +412,19 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="RestrictedEventType">
+    <xs:complexType name="RestrictedEventType" abstract="true">
         <xs:annotation>
             <xs:documentation>
-                a data type - restriction on the milops event type that significantly limits what elements can be used.
+                a data type - set up for RestrictedEventType
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <!-- <xs:restriction base="mo:EventType">  -->
-            <xs:extension base="structures:ObjectType">
+        <xs:complexContent>
+            <!--   <xs:restriction base="mo:EventType"> -->
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
-                    <!--<xs:element ref="mo:EventID"/>-->
+                    <xs:element ref="emevent:EventID"/>
+                    <!--  mo:EventID not available in 4.0 -->
                     <xs:element ref="emevent:EventTypeDescriptor"/>
                     <xs:element ref="mo:EventLocation"/>
                     <xs:element ref="mo:EventValidityDateTimeRange"/>
@@ -441,7 +442,7 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="structures:ObjectType">
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="emevent:USNGCoordinateID" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="emevent:USNGEastingValue" minOccurs="1" maxOccurs="1"/>
@@ -462,8 +463,8 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <!-- <xs:restriction base="nc:CommentType">  -->
-            <xs:extension base="structures:ObjectType">
+            <!-- <xs:restriction base="nc:CommentType"> -->
+            <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
                     <xs:element ref="nc:CommentCreationDate" minOccurs="1" maxOccurs="1"/>
                     <xs:element ref="nc:CommentText" minOccurs="1" maxOccurs="1"/>
@@ -472,4 +473,20 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <xs:complexType name="ObjectType" abstract="true">
+        <xs:annotation>
+            <xs:documentation>
+                A data type - for object
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="structures:ObjectType">
+                <xs:sequence>
+                </xs:sequence>
+            </xs:extension>
+
+
+        </xs:complexContent>
+    </xs:complexType>
+
 </xs:schema>
