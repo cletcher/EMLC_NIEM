@@ -562,15 +562,30 @@
                 a data type representing a formatted email address
             </xs:documentation>
         </xs:annotation>
-        <xs:simpleContent>
-            <!-- violates rule 10-12
+        <!-- <xs:simpleContent>
+             violates rule 10-12
             <xs:restriction base="niem-xs:string">
                 <xs:pattern value="[^@]+@[^\.]+\..+"/>
-            </xs:restriction>  -->
+            </xs:restriction>
             <xs:extension base="niem-xs:string" />
-         </xs:simpleContent>
-         
+         </xs:simpleContent> -->
+        <xs:complexContent>
+            <xs:extension base="emlc:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="emlc:EmailAddress"  maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
     </xs:complexType>
+
+    <xs:element name="EmailAddress" type="niem-xs:string">
+        <xs:annotation>
+            <xs:documentation>
+                A free text string for email
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
     <xs:complexType name="TextStatusType">
         <xs:annotation>
             <xs:documentation>
@@ -592,18 +607,35 @@
             </xs:documentation>
         </xs:annotation>
     </xs:attribute>
+
+    <xs:element name="TextStatusDescription" type="niem-xs:string">
+        <xs:annotation>
+            <xs:documentation>
+                A free text string for status
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
     <xs:complexType name="TextStatusDescriptionType">
         <xs:annotation>
             <xs:documentation>
                 A data type for a value from a specified controlled vocabulary.
             </xs:documentation>
         </xs:annotation>
+        <!--
         <xs:simpleContent>
             <xs:extension base="niem-xs:string">
-                <!--             violates rule 10-12
-                <xs:attribute ref="emlc:sourceID" use="optional"/> -->
+                            violates rule 10-12
+                <xs:attribute ref="emlc:sourceID" use="optional"/>
             </xs:extension>
-        </xs:simpleContent>
+        </xs:simpleContent> -->
+        <xs:complexContent>
+            <xs:extension base="emlc:ObjectType">
+                <xs:sequence>
+                    <xs:element ref="emlc:TextStatusDescription"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+
     </xs:complexType>
 
     <xs:complexType name="ObjectType" abstract="true">

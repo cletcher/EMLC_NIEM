@@ -419,7 +419,6 @@
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-        <xs:complexContent>
             <!--   <xs:restriction base="mo:EventType"> -->
             <xs:extension base="emevent:ObjectType">
                 <xs:sequence>
@@ -473,6 +472,8 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
+    <!-- using this as base instead of structures:ObjectType 10-12 -->
     <xs:complexType name="ObjectType" abstract="true">
         <xs:annotation>
             <xs:documentation>
@@ -484,8 +485,6 @@
                 <xs:sequence>
                 </xs:sequence>
             </xs:extension>
-
-
         </xs:complexContent>
     </xs:complexType>
 
