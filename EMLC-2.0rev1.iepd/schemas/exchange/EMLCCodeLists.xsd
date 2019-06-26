@@ -118,6 +118,11 @@
                     <xs:documentation>GROUND TRACK EQUIPMENT</xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
+            <xs:enumeration value="ATOM.GRDTRK.EQT.SENSOR">
+                <xs:annotation>
+                    <xs:documentation>GROUND TRACK EQUIPMENT</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
             <xs:enumeration value="ATOM.GRDTRK.EQT.GRDVEH">
                 <xs:annotation>
                     <xs:documentation>GROUND VEHICLE</xs:documentation>
@@ -714,6 +719,19 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
+            <xs:enumeration value="BITS.REPORT.EM.DISPATCH.AID.REQUEST">
+                <xs:annotation>
+                    <xs:documentation>An emergency management report that may require dispatched resources
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="BITS.REPORT.EM.DISPATCH.AID.RESPONSE">
+                <xs:annotation>
+                    <xs:documentation>An emergency management report that may require dispatched resources
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+
             <xs:enumeration value="BITS.REPORT.EM.DISPATCH.911H">
                 <xs:annotation>
                     <xs:documentation>911 Hang Up - 911 Hang-Ups</xs:documentation>

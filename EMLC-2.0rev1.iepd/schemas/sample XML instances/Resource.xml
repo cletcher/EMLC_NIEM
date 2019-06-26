@@ -1,9 +1,12 @@
 <emlc:Event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
 		xmlns:emevent="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/" xmlns:gml="http://www.opengis.net/gml/3.2" 
-		xmlns:mo="http://release.niem.gov/niem/domains/militaryOperations/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" 
+		xmlns:mo="http://release.niem.gov/niem/domains/militaryOperations/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
 		xmlns:xls="http://release.niem.gov/niem/external/ogc/xls/1.1.0/dhs-gmo/2.1.0"
 		xmlns:xlink="http://www.w3.org/1999/xlink" 						
 		xmlns:emlc="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/">
+	<emevent:EventID>
+		<nc:IdentificationID/>
+	</emevent:EventID>
 	<emevent:EventTypeDescriptor>
 		<emevent:EventTypeCode>ATOM.GRDTRK.EQT.GRDVEH.CVLVEH.EM.EMS.AMBULANCE.ALS</emevent:EventTypeCode>
 	</emevent:EventTypeDescriptor>
@@ -35,7 +38,7 @@
 	</emevent:EventID>
 	<emlc:ResourceDetail>
 		<emlc:ResourceStatus>
-			<emlc:ResourcePrimaryStatus>AVAILABLE</emlc:ResourcePrimaryStatus>
+			<emlc:ResourcePrimaryStatusValue>AVAILABLE</emlc:ResourcePrimaryStatusValue>
 		</emlc:ResourceStatus>
 		<emlc:ResourceOwningOrganization>
 			<nc:OrganizationIdentification>

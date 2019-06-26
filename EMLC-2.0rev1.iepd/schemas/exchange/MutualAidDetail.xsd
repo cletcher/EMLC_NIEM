@@ -89,7 +89,7 @@
             </xs:documentation>
         </xs:annotation>
     </xs:element>
-    <xs:element name="ResourceTypeDescriptiorExtension" type="niem-xs:string">
+    <xs:element name="ResourceTypeDescriptionExtension" type="niem-xs:string">
         <xs:annotation>
             <xs:documentation>
                 An info packet required to make a mutual aid response.
@@ -448,7 +448,7 @@
             <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:ResourceTypeCode" minOccurs="1" maxOccurs="1"/>
-                    <xs:element ref="maid:ResourceTypeDescriptiorExtension" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="maid:ResourceTypeDescriptionExtension" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element ref="emlc:ResourceNIMSDefinition" minOccurs="0" maxOccurs="1"/>
                 </xs:sequence>
             </xs:extension>
@@ -494,7 +494,7 @@
             <xs:extension base="emlc:ObjectType">
                 <xs:sequence>
                     <xs:element ref="maid:ResourceTypeCode" minOccurs="1" maxOccurs="1"/>
-                    <xs:element ref="maid:ResourceTypeDescriptiorExtension" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="maid:ResourceTypeDescriptionExtension" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element ref="emlc:ResourceNIMSDefinition" minOccurs="0" maxOccurs="1"/>
                 </xs:sequence>
             </xs:extension>
@@ -645,10 +645,10 @@
                     <xs:element ref="mo:EventLocation"/>
                     <xs:element ref="mo:EventValidityDateTimeRange"/>
                     <xs:element ref="mo:EventMessageDateTime"/>
-                    <xs:element ref="maid:EventAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element ref="emevent:USNGCoordinate" minOccurs="0" maxOccurs="1"/>
                     <xs:element ref="emevent:EventLink" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element ref="emevent:EventComment" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="maid:EventAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
                 </xs:sequence>
             </xs:extension>
             <!--  <xs:extension base="emevent:RestrictedEventType">

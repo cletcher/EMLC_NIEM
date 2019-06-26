@@ -5,6 +5,9 @@
 		xmlns:xlink="http://www.w3.org/1999/xlink" 						
 		xmlns:emlc="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/"
 		xmlns:maid="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/maid/">
+	<emevent:EventID>
+		<nc:IdentificationID/>
+	</emevent:EventID>
 	<emevent:EventTypeDescriptor>
 		<emevent:EventTypeCode>BITS.REPORT.EM.DISPATCH.AID.RESPONSE</emevent:EventTypeCode>
 	</emevent:EventTypeDescriptor>

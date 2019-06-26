@@ -13,6 +13,9 @@
 		xmlns:powdet="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/power/"
 		xmlns:locdet="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/location/"						
 		xmlns:emlc="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/">
+	<emevent:EventID>
+		<nc:IdentificationID/>
+	</emevent:EventID>
 	<emevent:EventTypeDescriptor>
 		<emevent:EventTypeCode>ATOM.GRDTRK.EQT.SENSOR</emevent:EventTypeCode>
 	</emevent:EventTypeDescriptor>
@@ -306,4 +309,4 @@
 			</raddet:OtherRadiological>
 		</sensor:RadiologicalDetail>
 	</sensor:SensorDetail>
-</emlc:Event>
+	</emlc:Event >

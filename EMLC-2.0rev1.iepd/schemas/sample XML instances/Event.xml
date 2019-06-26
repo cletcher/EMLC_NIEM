@@ -4,6 +4,9 @@
 		xmlns:xls="http://release.niem.gov/niem/external/ogc/xls/1.1.0/dhs-gmo/2.1.0"
 		xmlns:xlink="http://www.w3.org/1999/xlink" 						
 		xmlns:emlc="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/">
+	<emevent:EventID>
+		<nc:IdentificationID/>
+	</emevent:EventID>
 	<emevent:EventTypeDescriptor>
 		<emevent:EventTypeCode>ATOM.GRDTRK.EQT.GRDVEH.CVLVEH.EM.EMS.AMBULANCE.ALS</emevent:EventTypeCode>
 	</emevent:EventTypeDescriptor>

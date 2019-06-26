@@ -4,6 +4,9 @@
 		xmlns:xls="http://release.niem.gov/niem/external/ogc/xls/1.1.0/dhs-gmo/2.1.0"
 		xmlns:xlink="http://www.w3.org/1999/xlink" 						
 		xmlns:emlc="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/">
+	<emevent:EventID>
+		<nc:IdentificationID/>
+	</emevent:EventID>
 	<emevent:EventTypeDescriptor>
 		<emevent:EventTypeCode>BITS.REPORT.EM.DISPATCH.FIRE.ALARM.ALRF</emevent:EventTypeCode>
 	</emevent:EventTypeDescriptor>
@@ -35,7 +38,7 @@
 	</emevent:EventID>
 	<emlc:IncidentDetail>
 		<emlc:IncidentStatus>
-			<emlc:IncidentPrimaryStatus>ACTIVE</emlc:IncidentPrimaryStatus>
+			<emlc:IncidentPrimaryStatusValue>ACTIVE</emlc:IncidentPrimaryStatusValue>
 		</emlc:IncidentStatus>
 		<emlc:IncidentOwningOrganization>
 			<nc:OrganizationIdentification>

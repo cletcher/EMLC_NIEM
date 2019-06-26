@@ -13,9 +13,14 @@
 		xmlns:powdet="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/power/"
 		xmlns:locdet="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/sensor/location/"						
 		xmlns:emlc="http://release.niem.gov/niem/domains/emergencyManagement/4.0/emevent/2.0/emlc/">
+
+	<emevent:EventID>
+		<nc:IdentificationID/>
+	</emevent:EventID>
 	<emevent:EventTypeDescriptor>
 		<emevent:EventTypeCode>ATOM.GRDTRK.EQT.SENSOR</emevent:EventTypeCode>
 	</emevent:EventTypeDescriptor>
+	
 	<mo:EventLocation>
 		<mo:WGS84LocationCylinder>
 			<mo:WGS84LocationPoint>
@@ -46,7 +51,7 @@
 		<sensor:SensorID>SENSOR ID</sensor:SensorID>
 		<sensor:SensorStatus>String</sensor:SensorStatus>
 		<sensor:ReadingDateTime>
-			<nc:DateTime>2018-05-25T16:25:18.6445476Z</nc:DateTime>
+			2018-05-25T16:25:18.6445476Z
 		</sensor:ReadingDateTime>
 		<sensor:BiologicalDetail>
 			<biodet:AnthraxIndicator>true</biodet:AnthraxIndicator>
@@ -59,15 +64,14 @@
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>true</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-        <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
+				
+				<sensor:OtherSensorUnitOfMeasureText>In</sensor:OtherSensorUnitOfMeasureText>
 			</biodet:OtherBiological>
 			<biodet:OtherBiological>
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>false</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-			</biodet:OtherBiological>
+ 			</biodet:OtherBiological>
 		</sensor:BiologicalDetail>
 		<sensor:ChemicalDetail>
 			<chemdet:AcidValue>3.1415926535897900073734945</chemdet:AcidValue>
@@ -91,14 +95,12 @@
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>INTEGER</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-        <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
+
 			</chemdet:OtherChemical>
 			<chemdet:OtherChemical>
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 			</chemdet:OtherChemical>
 		</sensor:ChemicalDetail>
 		<sensor:DeviceDetail>
@@ -112,14 +114,11 @@
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>DOUBLE</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-        <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
 			</devdet:OtherDevice>
 			<devdet:OtherDevice>
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>STRING</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 			</devdet:OtherDevice>
 		</sensor:DeviceDetail>
 		<sensor:EnvironmentalDetail>
@@ -130,14 +129,11 @@
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>INTEGER</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-        <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
 			</envdet:OtherEnvironmental>
 			<envdet:OtherEnvironmental>
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>DOUBLE</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 			</envdet:OtherEnvironmental>
 		</sensor:EnvironmentalDetail>
 		<sensor:ExplosiveDetail>
@@ -210,14 +206,11 @@
 					<sensor:OtherSensorID>String</sensor:OtherSensorID>
 					<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 					<sensor:OtherSensorDataTypeCode>STRING</sensor:OtherSensorDataTypeCode>
-          <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-          <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
 				</expdet:OtherExplosiveFamily>
 				<expdet:OtherExplosiveFamily>
 					<sensor:OtherSensorID>String</sensor:OtherSensorID>
 					<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 					<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-          <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 				</expdet:OtherExplosiveFamily>
 			</expdet:ExplosiveFamily>
 			<expdet:ExplosivePrecursor>
@@ -240,14 +233,11 @@
 					<sensor:OtherSensorID>String</sensor:OtherSensorID>
 					<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 					<sensor:OtherSensorDataTypeCode>INTEGER</sensor:OtherSensorDataTypeCode>
-          <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-          <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
 				</expdet:OtherExplosivePrecursor>
 				<expdet:OtherExplosivePrecursor>
 					<sensor:OtherSensorID>String</sensor:OtherSensorID>
 					<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 					<sensor:OtherSensorDataTypeCode>INTEGER</sensor:OtherSensorDataTypeCode>
-          <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 				</expdet:OtherExplosivePrecursor>
 			</expdet:ExplosivePrecursor>
 		</sensor:ExplosiveDetail>
@@ -265,14 +255,11 @@
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>STRING</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-        <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
 			</locdet:OtherLocation>
 			<locdet:OtherLocation>
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 			</locdet:OtherLocation>
 		</sensor:LocationDetail>
 		<sensor:PhysiologicalDetail>
@@ -296,14 +283,11 @@
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-        <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
 			</phydet:OtherPhysiological>
 			<phydet:OtherPhysiological>
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 			</phydet:OtherPhysiological>
 		</sensor:PhysiologicalDetail>
 		<sensor:PowerDetail>
@@ -313,14 +297,11 @@
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>INTEGER</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-        <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
 			</powdet:OtherPower>
 			<powdet:OtherPower>
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 			</powdet:OtherPower>
 		</sensor:PowerDetail>
 		<sensor:RadiologicalDetail>
@@ -333,14 +314,11 @@
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>BOOLEAN</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
-        <sensor:OtherSensorUnitOfMeasureAbbreviationText>abr</sensor:OtherSensorUnitOfMeasureAbbreviationText>
 			</raddet:OtherRadiological>
 			<raddet:OtherRadiological>
 				<sensor:OtherSensorID>String</sensor:OtherSensorID>
 				<sensor:OtherSensorValueText>String</sensor:OtherSensorValueText>
 				<sensor:OtherSensorDataTypeCode>DOUBLE</sensor:OtherSensorDataTypeCode>
-        <sensor:OtherSensorUnitOfMeasureDescriptionText>String</sensor:OtherSensorUnitOfMeasureDescriptionText>
 			</raddet:OtherRadiological>
 		</sensor:RadiologicalDetail>
 	</sensor:SensorDetail>
